@@ -1,0 +1,2052 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Başlıksız Belge</title>
+<style> 
+
+#tab1{
+width: 100%;
+font: bold 1.25em "Trebuchet MS", Verdana, Arial, Helvetica,
+sans-serif;
+border: 30px solid #C1DAD7;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align: left;
+padding: 6px 6px 6px 12px;
+background: #C1DAD7;
+border-collapse: collapse;
+}
+ 
+#tab1 th{
+color: #54737A;
+padding: 6px 6px 6px 12px;
+ 
+}
+ 
+#tab1 td{
+padding: 6px 6px 6px 12px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+}
+#tab1 tr{
+color: #6D929B;
+background: #fff;
+}
+#tab1 tr:hover{
+background:#CAE8EA;
+color:#fff;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+<form id="form1" name="form1" method="POST" action="savas.php">
+<center>
+<table id="tab1" width="70%" border="0">
+  <tr>
+    <td width="39%" align="right" valign="baseline"><label for="musellem5">Musellem</label>
+      <input name="amusellem" type="text" id="amusellem" value="100" />
+      <label for="musellem5"></label></td>
+    <td width="9%" align="center" valign="middle"><input name="amusellemhedef" type="text" id="amusellemhedef" value="1" size="10" /></td>
+    <td width="31%" align="right"><label for="musellem9">Musellem</label>
+      <input name="bmusellem" type="text" id="bmusellem" value="100" /></td>
+    <td width="21%" align="center" valign="middle"><input name="bmusellemhedef" type="text" id="bmusellemhedef" value="1" size="10" /></td>
+    </tr>
+  <tr>
+    <td align="right" valign="baseline"><label for="musellem6">Sipahi</label>
+      <input type="text" name="asipahi" id="asipahi" value="100" /></td>
+    <td align="center" valign="middle"><input name="asipahihedef" type="text" id="asipahihedef" value="2" size="10" /></td>
+    <td align="right">Sipahi
+      <input type="text" name="bsipahi" id="bsipahi" value="100" /></td>
+    <td align="center" valign="middle"><input name="bsipahihedef" type="text" id="bsipahihedef" value="2" size="10" /></td>
+    </tr>
+  <tr>
+    <td align="right">Okçu
+      <input type="text" name="aokcu" id="aokcu" value="100" /></td>
+    <td align="center" valign="middle"><input name="aokcuhedef" type="text" id="aokcuhedef" value="3" size="10" /></td>
+    <td align="right">Okçu
+      <input type="text" name="bokcu" id="bokcu" value="100" /></td>
+    <td align="center" valign="middle"><input name="bokcuhedef" type="text" id="bokcuhedef" value="3" size="10" /></td>
+    </tr>
+   <tr>
+     <td align="right">Yeniçeri
+       <input type="text" name="ayeniceri" id="ayeniceri" value="100" /></td>
+     <td align="center" valign="middle"><input name="ayenicerihedef" type="text" id="ayenicerihedef" value="4" size="10" /></td>
+     <td align="right">Yeniçeri
+       <input type="text" name="byeniceri" id="byeniceri" value="100" /></td>
+     <td align="center" valign="middle"><input name="byenicerihedef" type="text" id="byenicerihedef" value="4" size="10" /></td>
+    </tr>
+    <tr>
+      <td align="right">Atlı Okçu
+        <input type="text" name="aatliokcu" id="aatliokcu" value="100" /></td>
+      <td align="center" valign="middle"><input name="aatliokcuhedef" type="text" id="aatliokcuhedef" value="5" size="10" /></td>
+      <td align="right">Atlı Okçu
+        <input type="text" name="batliokcu" id="batliokcu" value="100" /></td>
+      <td align="center" valign="middle"><input name="batliokcuhedef" type="text" id="batliokcuhedef" value="5" size="10" /></td>
+    </tr>
+    <tr>	
+      <td align="right">Akrep
+        <input type="text" name="aakrep" id="aakrep" value="100" /></td>
+      <td align="center" valign="middle"><input name="aakrephedef" type="text" id="aakrephedef" value="6" size="10" /></td>
+      <td align="right">Akrep
+        <input type="text" name="bakrep" id="bakrep" value="100" /></td>
+      <td align="center" valign="middle"><input name="bakrephedef" type="text" id="bakrephedef" value="6" size="10" /></td>
+    </tr>
+      <tr>
+        <td align="right">Mancınık
+          <input type="text" name="amancinik" id="amancinik" value="100" /></td>
+        <td align="center" valign="middle"><input name="amancinikhedef" type="text" id="amancinikhedef" value="7" size="10" /></td>
+        <td align="right">Mancınık
+          <input type="text" name="bmancinik" id="bancinik" value="100" /></td>
+        <td align="center" valign="middle"><input name="bmancinikhedef" type="text" id="bmancinikhedef" value="7" size="10" /></td>
+    </tr>
+  <tr>
+    <td colspan="4" align="center" valign="middle">Araştırma Tablosu</td>
+    </tr>
+</table><center/>
+  <table id="tab1" width="55%" border="0">
+    <tr>
+      <td align="right" valign="baseline"><label for="musellem14">Guc</label>
+        <input name="g1" type="text" id="amusellem2" value="2" />
+      <label for="musellem14"></label></td>
+      <td align="right" valign="baseline"><label for="musellem14">Guc</label>
+        <input name="g2" type="text" id="amusellem2" value="2" />
+      <label for="musellem14"></label></td>
+    </tr>
+    <tr>
+      <td align="right" valign="baseline"><label for="musellem16">Can</label>
+        <input name="c1" type="text" id="asipahi2" value="2" /></td>
+      <td align="right" valign="baseline"><label for="musellem16">Can</label>
+        <input name="c2" type="text" id="asipahi2" value="2" /></td>
+    </tr>
+    <tr>
+      <td align="right">Hız
+        <input name="h1" type="text" id="aokcu2" value="3" /></td>
+      <td align="right">Hız
+        <input name="h2" type="text" id="aokcu2" value="2" /></td>
+    </tr>
+	    <tr>
+      <td align="right">Saldıran birim 
+        <input type="text" name="hdf1" id="amuhedef" value="1" /></td>
+      <td align="right">Savunan birim 
+        <input type="text" name="hdf2" id="bmuhedef" value="1" /></td>
+    </tr>
+	    <tr>
+      <td align="right">Sipahi Hedefi
+        <input type="text" name="s1h" id="asihedef" value="1" /></td>
+      <td align="right">Sipahi Hedefi
+        <input type="text" name="s2h" id="bsihedef" value="1" /></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" valign="middle"><button class="button button1" formaction="savas.php" >Savaş</button></td>
+    </tr>
+  </table>
+</form>
+
+</body>
+<p>
+  <?php 
+  
+$amusellemyok = "Müsellem'ler yok oldu. ";
+$bmusellemyok = "Düşman Müsellem'ler yok edildi. ";
+$asipahiyok = "Sipahi'ler yok oldu. ";
+$bsipahiyok = "Düşman Sipahi'ler yok edildi. ";
+$aokcuyok = "Okçular'lar yok oldu. ";
+$bokcuyok = "Düşman Okçular'lar yok edildi. ";
+$ayeniceriyok = "Yeniçeri'ler yok oldu. ";
+$byeniceriyok = "Düşman Yeniçeri'ler yok edildi. ";
+$aatliokcuyok = "Atlı Okçu'lar yok oldu.";
+$batliokcuyok = "Düşman Atlı Okçu'lar yok edildi. ";
+$aakrepyok = "Akrep'ler yok oldu. ";
+$bakrepyok = "Düşman Akrep'ler yok edildi. ";
+$amancinikyok = "Mancınık'lar yok oldu. ";
+$bmancinikyok = "Düşman Mancınık'lar yok edildi. ";
+
+$amusellemyokki = "Saldıracak müsellem yok. ";
+$bmusellemyokki = "Saldıracak müsellem yok. ";
+$asipahiyokki = "Saldıracak sipahi yok. ";
+$bsipahiyokki = "Saldıracak sipahi yok. ";
+$aokcuyokki = "Saldıracak okçu yok. ";
+$bokcuyokki = "Saldıracak okçu yok. ";
+$ayeniceriyokki = "Saldıracak yeniçeri yok. ";
+$byeniceriyokki = "Saldıracak yeniçeri yok. ";
+$aatliokcuyokki = "Saldıracak atlı okçu yok. ";
+$batliokcuyokki = "Saldıracak atlı okçu yok. ";
+$aakrepyokki = "Saldıracak akrep yok. ";
+$bakrepyokki = "Saldıracak akrep yok. ";
+$amancinikyokki = "Saldıracak mancınık yok. ";
+$bmancinikyokki = "Saldıracak mancınık yok. ";
+
+$musellem['guc']=2;
+$musellem['can']=10;
+$musellem['hiz']=1;
+
+$sipahi['guc']=5;
+$sipahi['can']=10;
+$sipahi['hiz']=2;
+
+$okcu['guc']=5;
+$okcu['can']=10;
+$okcu['hiz']=3;
+
+$yeniceri['guc']=10;
+$yeniceri['can']=10;
+$yeniceri['hiz']=4;
+
+$atliokcu['guc']=10;
+$atliokcu['can']=20;
+$atliokcu['hiz']=5;
+
+$akrep['guc']=20;
+$akrep['can']=10;
+$akrep['hiz']=6;
+
+$mancinik['guc']=30;
+$mancinik['can']=10;
+$mancinik['hiz']=7;
+
+$atesettimi=array(0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+
+if($_POST)
+	{
+		if
+		(
+		ctype_digit($_POST['amusellem']) 	and		ctype_digit($_POST['bmusellem']) 	and 
+		ctype_digit($_POST['asipahi']) 		and		ctype_digit($_POST['bsipahi']) 		and 
+		ctype_digit($_POST['aokcu']) 		and		ctype_digit($_POST['bokcu']) 		and 
+		ctype_digit($_POST['ayeniceri']) 	and 	ctype_digit($_POST['byeniceri']) 	and 
+		ctype_digit($_POST['aatliokcu'])	and 	ctype_digit($_POST['batliokcu'])	and 
+		ctype_digit($_POST['aakrep']) 		and 	ctype_digit($_POST['bakrep']) 		and 
+		ctype_digit($_POST['amancinik']) 	and 	ctype_digit($_POST['bmancinik']) 	and 
+		ctype_digit($_POST['g1']) 			and 	ctype_digit($_POST['g2']) 			and 
+		ctype_digit($_POST['c1'])  			and 	ctype_digit($_POST['c2'])  			and 
+		ctype_digit($_POST['h1'])  			and 	ctype_digit($_POST['h2'])  			and
+		ctype_digit($_POST['amusellemhedef'])	and	ctype_digit($_POST['bmusellemhedef'])	and
+		ctype_digit($_POST['asipahihedef'])	and		ctype_digit($_POST['bsipahihedef'])	and
+		ctype_digit($_POST['aokcuhedef'])	and		ctype_digit($_POST['bokcuhedef'])	and
+		ctype_digit($_POST['ayenicerihedef'])	and	ctype_digit($_POST['byenicerihedef'])	and
+		ctype_digit($_POST['aatliokcuhedef'])	and	ctype_digit($_POST['batliokcuhedef'])	and
+		ctype_digit($_POST['aakrephedef'])	and		ctype_digit($_POST['bakrephedef'])	and
+		ctype_digit($_POST['amancinikhedef'])	and	ctype_digit($_POST['bmancinikhedef'])	
+		
+		)
+		{
+			if
+		(
+		$_POST['amusellem'] >= 0 		and	$_POST['bmusellem'] >= 0		and 
+		$_POST['asipahi'] >= 0 			and	$_POST['bsipahi'] >= 0			and 
+		$_POST['aokcu'] >= 0			and	$_POST['bokcu'] >= 0			and 
+		$_POST['ayeniceri'] >= 0		and $_POST['byeniceri'] >= 0		and 
+		$_POST['aatliokcu']	>= 0		and $_POST['batliokcu']	>= 0		and 
+		$_POST['aakrep'] >= 0			and $_POST['bakrep'] >= 0			and 
+		$_POST['amancinik'] >= 0		and $_POST['bmancinik'] >= 0		and 
+		$_POST['g1'] >= 0				and $_POST['g2'] >= 0				and 
+		$_POST['c1'] >= 0 				and $_POST['c2'] >= 0 				and 
+		$_POST['h1'] >= 0 				and $_POST['h2'] >= 0 				or
+		$_POST['amusellemhedef'] >= 0	or	$_POST['bmusellemhedef'] >= 0	or
+		$_POST['asipahihedef'] >= 0		or	$_POST['bsipahihedef'] >= 0		or
+		$_POST['aokcuhedef'] >= 0		or	$_POST['bokcuhedef'] >= 0		or
+		$_POST['ayenicerihedef'] >= 0	or	$_POST['byenicerihedef'] >= 0	or
+		$_POST['aatliokcuhedef'] >= 0	or	$_POST['batliokcuhedef'] >= 0	or
+		$_POST['aakrephedef'] >= 0		or	$_POST['bakrephedef'] >= 0		or
+		$_POST['amancinikhedef'] >= 0	or	$_POST['bmancinikhedef']	
+		)
+		{
+			
+		
+		
+		$amusellem=array($_POST['amusellem']);
+		$bmusellem=array($_POST['bmusellem']);
+		$asipahi=array($_POST['asipahi']);
+		$bsipahi=array($_POST['bsipahi']);
+		$aokcu=array($_POST['aokcu']);
+		$bokcu=array($_POST['bokcu']);
+		$ayeniceri=array($_POST['ayeniceri']);
+		$byeniceri=array($_POST['byeniceri']);
+		$aatliokcu=array($_POST['aatliokcu']);
+		$batliokcu=array($_POST['batliokcu']);
+		$aakrep=array($_POST['aakrep']);
+		$bakrep=array($_POST['bakrep']);
+		$amancinik=array($_POST['amancinik']);
+		$bmancinik=array($_POST['bmancinik']);
+		$g1=$_POST['g1'];
+		$g2=$_POST['g2'];
+		$c1=$_POST['c1'];
+		$c2=$_POST['c2'];
+		$h1=$_POST['h1'];
+		$h2=$_POST['h2'];
+		$m1=$_POST['m1'];
+		$m2=$_POST['m2'];
+		$s1=$_POST['s1'];
+		$s2=$_POST['s2'];
+		$hdf1= array($_POST['amusellemhedef'],$_POST['asipahihedef'],$_POST['aokcuhedef'],$_POST['ayenicerihedef'],$_POST['aatliokcuhedef'],$_POST['aakrephedef'],$_POST['amancinikhedef']);
+		$hdf2= array($_POST['bmusellemhedef'],$_POST['bsipahihedef'],$_POST['bokcuhedef'],$_POST['byenicerihedef'],$_POST['batliokcuhedef'],$_POST['bakrephedef'],$_POST['bmancinikhedef']);
+	
+		
+		function birim_guclendirme($deger) 
+							{
+								for ($i = $deger, $x=$deger ; $i < 0; $i--) 
+										{ 
+											
+											$x = $x + 1; 
+										} 			
+
+								return $x;	
+				
+				}
+		
+		
+		// A birim güç güncellemesi
+		$birim["Amusellem"]['guc'] = birim_guclendirme($g1) + $musellem['guc'] ;
+		$birim["Amusellem"]['can'] = birim_guclendirme($c1) + $musellem['can'] ;
+		$birim["Amusellem"]['hiz'] = birim_guclendirme($h1) + $musellem['hiz'] ;
+
+		$birim["Asipahi"]['guc'] = birim_guclendirme($g1) + $sipahi['guc'] ;
+		$birim["Asipahi"]['can'] = birim_guclendirme($c1) + $sipahi['can'] ;
+		$birim["Asipahi"]['hiz'] = birim_guclendirme($h1) + $sipahi['hiz'] ;
+
+		$birim["Aokcu"]['guc'] = birim_guclendirme($g1) + $okcu['guc'] ;
+		$birim["Aokcu"]['can'] = birim_guclendirme($c1) + $okcu['can'] ;
+		$birim["Aokcu"]['hiz'] = birim_guclendirme($h1) + $okcu['hiz'] ;
+
+		$birim["Ayeniceri"]['guc'] = birim_guclendirme($g1) + $yeniceri['guc'] ;
+		$birim["Ayeniceri"]['can'] = birim_guclendirme($c1) + $yeniceri['can'] ;
+		$birim["Ayeniceri"]['hiz'] = birim_guclendirme($h1) + $yeniceri['hiz'] ;
+
+		$birim["Aatliokcu"]['guc'] = birim_guclendirme($g1) + $atliokcu['guc'] ;
+		$birim["Aatliokcu"]['can'] = birim_guclendirme($c1) + $atliokcu['can'] ;
+		$birim["Aatliokcu"]['hiz'] = birim_guclendirme($h1) + $atliokcu['hiz'] ;
+
+		$birim["Aakrep"]['guc'] = birim_guclendirme($g1) + $akrep['guc'] ;
+		$birim["Aakrep"]['can'] = birim_guclendirme($c1) + $akrep['can'] ;
+		$birim["Aakrep"]['hiz'] = birim_guclendirme($h1) + $akrep['hiz'] ;
+
+		$birim["Amancinik"]['guc'] = birim_guclendirme($g1) + $mancinik['guc'] ;
+		$birim["Amancinik"]['can'] = birim_guclendirme($c1) + $mancinik['can'] ;
+		$birim["Amancinik"]['hiz'] = birim_guclendirme($h1) + $mancinik['hiz'] ;
+
+		
+		
+		// B birim güç güncellemesi
+		$birim["Bmusellem"]['guc'] = birim_guclendirme($g2) + $musellem['guc'] ;			// id = 1
+		$birim["Bmusellem"]['can'] = birim_guclendirme($c2) + $musellem['can'] ;
+		$birim["Bmusellem"]['hiz'] = birim_guclendirme($h2) + $musellem['hiz'] ;
+
+		$birim["Bsipahi"]['guc'] = birim_guclendirme($g2) + $sipahi['guc'] ; 			// id = 2
+		$birim["Bsipahi"]['can'] = birim_guclendirme($c2) + $sipahi['can'] ;
+		$birim["Bsipahi"]['hiz'] = birim_guclendirme($h2) + $sipahi['hiz'] ;
+
+		$birim["Bokcu"]['guc'] = birim_guclendirme($g2) + $okcu['guc'] ; 				// id = 3
+		$birim["Bokcu"]['can'] = birim_guclendirme($c2) + $okcu['can'] ;
+		$birim["Bokcu"]['hiz'] = birim_guclendirme($h2) + $okcu['hiz'] ;
+
+		$birim["Byeniceri"]['guc'] = birim_guclendirme($g2) + $yeniceri['guc'] ;			// id = 4
+		$birim["Byeniceri"]['can'] = birim_guclendirme($c2) + $yeniceri['can'] ;
+		$birim["Byeniceri"]['hiz'] = birim_guclendirme($h2) + $yeniceri['hiz'] ;
+
+		$birim["Batliokcu"]['guc'] = birim_guclendirme($g2) + $atliokcu['guc'] ;			// id = 5
+		$birim["Batliokcu"]['can'] = birim_guclendirme($c2) + $atliokcu['can'] ;
+		$birim["Batliokcu"]['hiz'] = birim_guclendirme($h2) + $atliokcu['hiz'] ;
+
+		$birim["Bakrep"]['guc'] = birim_guclendirme($g2) + $akrep['guc'] ;				// id = 6
+		$birim["Bakrep"]['can'] = birim_guclendirme($c2) + $akrep['can'] ;
+		$birim["Bakrep"]['hiz'] = birim_guclendirme($h2) + $akrep['hiz'] ;
+
+		$birim["Bmancinik"]['guc'] = birim_guclendirme($g2) + $mancinik['guc'] ;			// id = 7
+		$birim["Bmancinik"]['can'] = birim_guclendirme($c2) + $mancinik['can'] ;
+		$birim["Bmancinik"]['hiz'] = birim_guclendirme($h2) + $mancinik['hiz'] ;
+		
+		$ahizlaryedek=$ahizlar= array($birim["Amusellem"]['hiz'],$birim["Asipahi"]['hiz'],$birim["Aokcu"]['hiz'],$birim["Ayeniceri"]['hiz'],$birim["Aatliokcu"]['hiz'],$birim["Aakrep"]['hiz'],$birim["Amancinik"]['hiz']);
+		$bhizlaryedek=$bhizlar= array($birim["Bmusellem"]['hiz'],$birim["Bsipahi"]['hiz'],$birim["Bokcu"]['hiz'],$birim["Byeniceri"]['hiz'],$birim["Batliokcu"]['hiz'],$birim["Bakrep"]['hiz'],$birim["Bmancinik"]['hiz']);
+
+		function saldiranx($saldiran,$ilkhedef) 
+					{
+						
+							global 	$Amusellem,	$amusellem,	$amusellemyok,	$amusellemyokki,	//1
+									$Bmusellem,	$bmusellem,	$bmusellemyok,	$bmusellemyokki,
+									
+									$Asipahi,	$asipahi,	$asipahiyok,	$asipahiyokki,	//2
+									$Bsipahi,	$bsipahi,	$bsipahiyok,	$bsipahiyokki,	
+									
+									$Aokcu,		$aokcu,		$aokcuyok,		$aokcuyokki,		//3
+									$Bokcu,		$bokcu,		$bokcuyok,		$bokcuyokki,
+									
+									$Ayeniceri,	$ayeniceri,	$ayeniceriyok,	$ayeniceriyokki,	//4
+									$Byeniceri,	$byeniceri,	$byeniceriyok,	$byeniceriyokki,
+									
+									$Aatliokcu,	$aatliokcu,	$aatliokcuyok,	$aatliokcuyokki,	//5
+									$Batliokcu,	$batliokcu,	$batliokcuyok,	$batliokcuyokki,
+									
+									$Bakrep,	$aakrep,	$aakrepyok,		$aakrepyokki,		//6
+									$Aakrep,	$bakrep,	$bakrepyok,		$bakrepyokki,
+									
+									$Amancinik,	$amancinik,	$amancinikyok,	$amancinikyokki,	//7
+									$Bmancinik,	$bmancinik,	$bmancinikyok,	$bmancinikyokki,
+									$birim,		$hdf1,
+									$hdf2;
+									
+									$oran=1;
+									echo '<center>';
+							
+									if($saldiran=="1" and $ilkhedef=="1" and $bmusellem[0]>=1 and $amusellem[0]>=1 ) 
+											{
+												
+											$kayiporani=(($birim["Bmusellem"]['can'] * $bmusellem[0] ) - ($birim["Amusellem"]['guc'] * $amusellem[0])*$oran) / ($birim["Bmusellem"]['can']*$bmusellem[0]);
+											$bmusellem[0]=round($kayiporani * $bmusellem[0]);
+											if($bmusellem[0]<=0 and $amusellem[0]>=1)
+											{
+												return $bmusellemyok.'Müsellem : '.$bmusellem[0]=0 ;
+											}else return 'Düşman Müsellem : '.$bmusellem[0];
+											}
+											elseif($saldiran=="1" and $ilkhedef=="1" and $amusellem[0]<=0){$amusellem[0]=0; return $amusellemyokki;}
+											elseif($saldiran=="1" and $ilkhedef=="1" and $bmusellem[0]<=0) return saldiranx(1,rand(1,7));
+									
+									if($saldiran=="1" and $ilkhedef=="2" and $bsipahi[0]>=1 and $amusellem[0]>=1 ) 
+											{
+										$oran=0.5;
+											$kayiporani=(($birim["Bsipahi"]['can'] * $bsipahi[0] ) - ($birim["Amusellem"]['guc'] * $amusellem[0])*$oran) / ($birim["Bsipahi"]['can']*$bsipahi[0]);
+											$bsipahi[0]=round($kayiporani * $bsipahi[0]);
+											if($bsipahi[0]<=0 and $amusellem[0]>=1)
+											{
+												return $bsipahiyok.'Sipahi : '.$bsipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$bsipahi[0];
+											}
+											elseif($saldiran=="1" and $ilkhedef=="2" and $amusellem[0]<=0) {$amusellem[0]=0; return $amusellemyokki;}
+											elseif($saldiran=="1" and $ilkhedef=="2" and $bsipahi[0]<=0) return saldiranx(1,rand(1,7));
+									
+									if($saldiran=="1" and $ilkhedef=="3" and $bokcu[0]>=1 and $amusellem[0]>=1 ) 
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Bokcu"]['can'] * $bokcu[0] ) - ($birim["Amusellem"]['guc'] * $amusellem[0])*$oran) / ($birim["Bokcu"]['can']*$bokcu[0]);
+											$bokcu[0]=round($kayiporani * $bokcu[0]);
+											if($bokcu[0]<=0 and $amusellem[0]>=1)
+											{
+												return $bokcuyok.'Okçu : '.$bokcu[0]=0;
+											}else return 'Düşman Okçu : '.$bokcu[0];
+											}
+											elseif($saldiran=="1" and $ilkhedef=="3" and $amusellem[0]<=0) {$amusellem[0]=0; return $amusellemyokki;}
+											elseif($saldiran=="1" and $ilkhedef=="3" and $bokcu[0]<=0) return saldiranx(1,rand(1,7));
+									if($saldiran=="1" and $ilkhedef=="4" and $amusellem[0]>=1 and $byeniceri[0]>=1 ) 
+											{
+										$oran=0.3;
+											$kayiporani=(($birim["Byeniceri"]['can'] * $byeniceri[0] ) - ($birim["Amusellem"]['guc'] * $amusellem[0])*$oran) / ($birim["Byeniceri"]['can']*$byeniceri[0]);
+											$byeniceri[0]=round($kayiporani * $byeniceri[0]);
+											if($byeniceri[0]<=0 and $amusellem[0]>=1)
+											{
+												return $byeniceriyok.'Yeniçeri : '.$byeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$byeniceri[0];
+											}
+											elseif($saldiran=="1" and $ilkhedef=="4" and $amusellem[0]<=0) {$amusellem[0]=0; return $amusellemyokki;}
+											elseif($saldiran=="1" and $ilkhedef=="4" and $byeniceri[0]<=0) return saldiranx(1,rand(1,7));
+									if($saldiran=="1" and $ilkhedef=="5" and $amusellem[0]>=1 and $batliokcu[0]>=1 ) 
+											{
+										$oran=0.2;
+											$kayiporani=(($birim["Batliokcu"]['can'] * $batliokcu[0] ) - ($birim["Amusellem"]['guc'] * $amusellem[0])*$oran) / ($birim["Batliokcu"]['can']*$batliokcu[0]);
+											$batliokcu[0]=round($kayiporani * $batliokcu[0]);
+											if($batliokcu[0]<=0 and $amusellem[0]>=1)
+											{
+												return $batliokcuyok.'Atlı Okçu : '.$batliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$batliokcu[0];
+											}
+											elseif($saldiran=="1" and $ilkhedef=="5" and $amusellem[0]<=0) {$amusellem[0]=0; return $amusellemyokki;}
+											elseif($saldiran=="1" and $ilkhedef=="5" and $batliokcu[0]<=0) return saldiranx(1,rand(1,7));
+									if($saldiran=="1" and $ilkhedef=="6" and $bakrep[0]>=1 and $amusellem[0]>=1 ) 
+											{
+										$oran=0.1;
+											$kayiporani=(($birim["Bakrep"]['can'] * $bakrep[0] ) - ($birim["Amusellem"]['guc'] * $amusellem[0])*$oran) / ($birim["Bakrep"]['can']*$bakrep[0]);
+											$bakrep[0]=round($kayiporani * $bakrep[0]);
+											if($bakrep[0]<=0 and $amusellem[0]>=1)
+											{
+												return $bakrepyok.'Akrep : '.$bakrep[0]=0;
+											}else return 'Düşman Akrep : '.$bakrep[0];
+											}
+											elseif($saldiran=="1" and $ilkhedef=="6" and $amusellem[0]<=0) {$amusellem[0]=0; return $amusellemyokki;}
+											elseif($saldiran=="1" and $ilkhedef=="6" and $bakrep[0]<=0) return saldiranx(1,rand(1,7));
+									if($saldiran=="1" and $ilkhedef=="7" and $bmancinik[0]>=1 and $amusellem[0]>=1 ) 
+											{
+										$oran=0.06;
+											$kayiporani=(($birim["Bmancinik"]['can'] * $bmancinik[0] ) - ($birim["Amusellem"]['guc'] * $amusellem[0])*$oran) / ($birim["Bmancinik"]['can']*$bmancinik[0]);
+											$bmancinik[0]=round($kayiporani * $bmancinik[0]);
+											if($bmancinik[0]<=0 and $amusellem[0]>=1)
+											{
+												return $bmancinikyok.'Mancınık : '.$bmancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$bmancinik[0];
+											}
+											elseif($saldiran=="1" and $ilkhedef=="7" and $amusellem[0]<=0) {$amusellem[0]=0; return $amusellemyokki;}
+											elseif($saldiran=="1" and $ilkhedef=="7" and $bmancinik[0]<=0) return saldiranx(1,rand(1,7));
+									
+									if($saldiran=="2" and $ilkhedef=="1" and $bmusellem[0]>=1 and $asipahi[0]>=1 ) 
+											{
+										$oran=2.0;
+											$kayiporani=(($birim["Bmusellem"]['can'] * $bmusellem[0] ) - ($birim["Asipahi"]['guc'] * $asipahi[0])*$oran) / ($birim["Bmusellem"]['can']*$bmusellem[0]);
+											$bmusellem[0]=round($kayiporani * $bmusellem[0]);
+											if($bmusellem[0]<=0 and $asipahi[0]>=1)
+											{
+												return $bmusellemyok.'Müsellem : '.$bmusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$bmusellem[0];
+											}
+											elseif($saldiran=="2" and $ilkhedef=="1" and $asipahi[0]<=0) {$asipahi[0]=0; return $asipahiyokki;}
+											elseif($saldiran=="2" and $ilkhedef=="1" and $bmusellem[0]<=0) return saldiranx(2,rand(1,7));
+									
+									if($saldiran=="2" and $ilkhedef=="2" and $bsipahi[0]>=1 and $asipahi[0]>=1 )  
+											{
+										$oran=1.0;
+											$kayiporani=(($birim["Bsipahi"]['can'] * $bsipahi[0] ) - ($birim["Asipahi"]['guc'] * $asipahi[0])*$oran) / ($birim["Bsipahi"]['can']*$bsipahi[0]);
+											$bsipahi[0]=round($kayiporani * $bsipahi[0]);
+											if($bsipahi[0]<=0 and $asipahi[0]>=1)
+											{
+												return $bsipahiyok.'Sipahi : '.$bsipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$bsipahi[0];
+											}
+											elseif($saldiran=="2" and $ilkhedef=="2" and $asipahi[0]<=0) {$asipahi[0]=0; return $asipahiyokki;}
+											elseif($saldiran=="2" and $ilkhedef=="2" and $bsipahi[0]<=0) return saldiranx(2,rand(1,7));
+									
+									if($saldiran=="2" and $ilkhedef=="3" and $bokcu[0]>=1 and $asipahi[0]>=1 ) 
+											{
+										$oran=0.8;
+											$kayiporani=(($birim["Bokcu"]['can'] * $bokcu[0] ) - ($birim["Asipahi"]['guc'] * $asipahi[0])*$oran) / ($birim["Bokcu"]['can']*$bokcu[0]);
+											$bokcu[0]=round($kayiporani * $bokcu[0]);
+											if($bokcu[0]<=0 and $asipahi[0]>=1)
+											{
+												return $bokcuyok.'Okçu : '.$bokcu[0]=0;
+											}else return 'Düşman Okçu : '.$bokcu[0];
+											}
+											elseif($saldiran=="2" and $ilkhedef=="3" and $asipahi[0]<=0) {$asipahi[0]=0; return $asipahiyokki;}
+											elseif($saldiran=="2" and $ilkhedef=="3" and $bokcu[0]<=0) return saldiranx(2,rand(1,7));
+									if($saldiran=="2" and $ilkhedef=="4" and $byeniceri[0]>=1 and $asipahi[0]>=1 )  
+											{
+										$oran=0.5;
+											$kayiporani=(($birim["Byeniceri"]['can'] * $byeniceri[0] ) - ($birim["Asipahi"]['guc'] * $asipahi[0])*$oran) / ($birim["Byeniceri"]['can']*$byeniceri[0]);
+											$byeniceri[0]=round($kayiporani * $byeniceri[0]);
+											if($byeniceri[0]<=0 and $asipahi[0]>=1)
+											{
+												return $byeniceriyok.'Yeniçeri : '.$byeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$byeniceri[0];
+											}
+											elseif($saldiran=="2" and $ilkhedef=="4" and $asipahi[0]<=0) {$asipahi[0]=0; return $asipahiyokki;}
+											elseif($saldiran=="2" and $ilkhedef=="4" and $byeniceri[0]<=0) return saldiranx(2,rand(1,7));
+									if($saldiran=="2" and $ilkhedef=="5" and $batliokcu[0]>=1 and $asipahi[0]>=1 )   
+											{
+										$oran=0.25;
+											$kayiporani=(($birim["Batliokcu"]['can'] * $batliokcu[0] ) - ($birim["Asipahi"]['guc'] * $asipahi[0])*$oran) / ($birim["Batliokcu"]['can']*$batliokcu[0]);
+											$batliokcu[0]=round($kayiporani * $batliokcu[0]);
+											if($batliokcu[0]<=0 and $asipahi[0]>=1)
+											{
+												return $batliokcuyok.'Atlı Okçu : '.$batliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$batliokcu[0];
+											}
+											elseif($saldiran=="2" and $ilkhedef=="5" and $asipahi[0]<=0) {$asipahi[0]=0; return $asipahiyokki;}
+											elseif($saldiran=="2" and $ilkhedef=="5" and $batliokcu[0]<=0) return saldiranx(2,rand(1,7));
+									if($saldiran=="2" and $ilkhedef=="6" and $bakrep[0]>=1 and $asipahi[0]>=1 )  
+											{
+										$oran=0.15;
+											$kayiporani=(($birim["Bakrep"]['can'] * $bakrep[0] ) - ($birim["Asipahi"]['guc'] * $asipahi[0])*$oran) / ($birim["Bakrep"]['can']*$bakrep[0]);
+											$bakrep[0]=round($kayiporani * $bakrep[0]);
+											if($bakrep[0]<=0 and $asipahi[0]>=1)
+											{
+												return $bakrepyok.'Akrep : '.$bakrep[0]=0;
+											}else return 'Düşman Akrep : '.$bakrep[0];
+											}
+											elseif($saldiran=="2" and $ilkhedef=="6" and $asipahi[0]<=0) {$asipahi[0]=0; return $asipahiyokki;}
+											elseif($saldiran=="2" and $ilkhedef=="6" and $bakrep[0]<=0) return saldiranx(2,rand(1,7));
+									if($saldiran=="2" and $ilkhedef=="7" and $bmancinik[0]>=1 and $asipahi[0]>=1 )  
+											{
+										$oran=0.1;
+											$kayiporani=(($birim["Bmancinik"]['can'] * $bmancinik[0] ) - ($birim["Asipahi"]['guc'] * $asipahi[0])*$oran) / ($birim["Bmancinik"]['can']*$bmancinik[0]);
+											$bmancinik[0]=round($kayiporani * $bmancinik[0]);
+											if($bmancinik[0]<=0 and $asipahi[0]>=1)
+											{
+												return $bmancinikyok.'Mancınık : '.$bmancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$bmancinik[0];
+											}
+											elseif($saldiran=="2" and $ilkhedef=="7" and $asipahi[0]<=0) {$asipahi[0]=0; return $asipahiyokki;}
+											elseif($saldiran=="2" and $ilkhedef=="7" and $bmancinik[0]<=0) return saldiranx(2,rand(1,7));
+									
+									if($saldiran=="3" and $ilkhedef=="1" and $bmusellem[0]>=1 and $aokcu[0]>=1 )  
+											{
+										$oran=2.5;
+											$kayiporani=(($birim["Bmusellem"]['can'] * $bmusellem[0] ) - (($birim["Aokcu"]['guc'] * $aokcu[0])*$oran)) / ($birim["Bmusellem"]['can']*$bmusellem[0]);
+											$bmusellem[0]=round($kayiporani * $bmusellem[0]);
+											if($bmusellem[0]<=0 and $aokcu[0]>=1)
+											{
+												return $bmusellemyok.'Müsellem : '.$bmusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$bmusellem[0];
+											}
+											elseif($saldiran=="3" and $ilkhedef=="1" and $aokcu[0]<=0) {$aokcu[0]=0; return $aokcuyokki;}
+											elseif($saldiran=="3" and $ilkhedef=="1" and $bmusellem[0]<=0) return saldiranx(3,rand(1,7));
+									
+									if($saldiran=="3" and $ilkhedef=="2" and $bsipahi[0]>=1 and $aokcu[0]>=1 )
+											{
+										$oran=1.2;
+											$kayiporani=(($birim["Bsipahi"]['can'] * $bsipahi[0] ) - ($birim["Aokcu"]['guc'] * $aokcu[0])*$oran) / ($birim["Bsipahi"]['can']*$bsipahi[0]);
+											$bsipahi[0]=round($kayiporani * $bsipahi[0]);
+											if($bsipahi[0]<=0 and $aokcu[0]>=1)
+											{
+												return $bsipahiyok.'Sipahi : '.$bsipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$bsipahi[0];
+											}
+											elseif($saldiran=="3" and $ilkhedef=="2" and $aokcu[0]<=0) {$aokcu[0]=0; return $aokcuyokki;}
+											elseif($saldiran=="3" and $ilkhedef=="2" and $bsipahi[0]<=0) return saldiranx(3,rand(1,7));
+									
+									if($saldiran=="3" and $ilkhedef=="3" and $bokcu[0]>=1 and $aokcu[0]>=1 )  
+											{
+										$oran=1.0;
+											$kayiporani=(($birim["Bokcu"]['can'] * $bokcu[0] ) - ($birim["Aokcu"]['guc'] * $aokcu[0])*$oran) / ($birim["Bokcu"]['can']*$bokcu[0]);
+											$bokcu[0]=round($kayiporani * $bokcu[0]);
+											if($bokcu[0]=0 and $aokcu[0]>=1)
+											{
+												return $bokcuyok.'Okçu : '.$bokcu[0]=0;
+											}else return 'Düşman Okçu : '.$bokcu[0];
+											}
+											elseif($saldiran=="3" and $ilkhedef=="3" and $aokcu[0]<=0) {$aokcu[0]=0; return $aokcuyokki;}
+											elseif($saldiran=="3" and $ilkhedef=="3" and $bokcu[0]<=0) return saldiranx(3,rand(1,7));
+											
+											
+									if($saldiran=="3" and $ilkhedef=="4" and $byeniceri[0]>=1 and $aokcu[0]>=1 ) 
+											{
+										$oran=0.8;
+											$kayiporani=(($birim["Byeniceri"]['can'] * $byeniceri[0] ) - ($birim["Aokcu"]['guc'] * $aokcu[0])*$oran) / ($birim["Byeniceri"]['can']*$byeniceri[0]);
+											$byeniceri[0]=round($kayiporani * $byeniceri[0]);
+											if($byeniceri[0]<=0 and $aokcu[0]>=1)
+											{
+												return $byeniceriyok.'Yeniçeri : '.$byeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$byeniceri[0];
+											}
+											elseif($saldiran=="3" and $ilkhedef=="4" and $aokcu[0]<=0) {$aokcu[0]=0; return $aokcuyokki;}
+											elseif($saldiran=="3" and $ilkhedef=="4" and $byeniceri[0]<=0) return saldiranx(3,rand(1,7));
+									if($saldiran=="3" and $ilkhedef=="5" and $batliokcu[0]>=1 and $aokcu[0]>=1 ) 
+											{
+										$oran=0.3;
+											$kayiporani=(($birim["Batliokcu"]['can'] * $batliokcu[0] ) - ($birim["Aokcu"]['guc'] * $aokcu[0])*$oran) / ($birim["Batliokcu"]['can']*$batliokcu[0]);
+											$batliokcu[0]=round($kayiporani * $batliokcu[0]);
+											if($batliokcu[0]<=0 and $aokcu[0]>=1)
+											{
+												return $batliokcuyok.'Atlı Okçu : '.$batliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$batliokcu[0];
+											}
+											elseif($saldiran=="3" and $ilkhedef=="5" and $aokcu[0]<=0) {$aokcu[0]=0; return $aokcuyokki;}
+											elseif($saldiran=="3" and $ilkhedef=="5" and $batliokcu[0]<=0) return saldiranx(3,rand(1,7));
+									if($saldiran=="3" and $ilkhedef=="6" and $bakrep[0]>=1 and $aokcu[0]>=1 )
+											{
+										$oran=0.2;
+											$kayiporani=(($birim["Bakrep"]['can'] * $bakrep[0] ) - ($birim["Aokcu"]['guc'] * $aokcu[0])*$oran) / ($birim["Bakrep"]['can']*$bakrep[0]);
+											$bakrep[0]=round($kayiporani * $bakrep[0]);
+											if($bakrep[0]<=0 and $aokcu[0]>=1)
+											{
+												return $bakrepyok.'Akrep : '.$bakrep[0]=0;
+											}else return 'Düşman Akrep : '.$bakrep[0];
+											}
+											elseif($saldiran=="3" and $ilkhedef=="6" and $aokcu[0]<=0) {$aokcu[0]=0; return $aokcuyokki;}
+											elseif($saldiran=="3" and $ilkhedef=="6" and $bakrep[0]<=0) return saldiranx(3,rand(1,7));
+									if($saldiran=="3" and $ilkhedef=="7" and $bmancinik[0]>=1 and $aokcu[0]>=1 ) 
+											{
+										$oran=0.2;
+											$kayiporani=(($birim["Bmancinik"]['can'] * $bmancinik[0] ) - ($birim["Aokcu"]['guc'] * $aokcu[0])*$oran) / ($birim["Bmancinik"]['can']*$bmancinik[0]);
+											$bmancinik[0]=round($kayiporani * $bmancinik[0]);
+											if($bmancinik[0]<=0 and $aokcu[0]>=1)
+											{
+												return $bmancinikyok.'Mancınık : '.$bmancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$bmancinik[0];
+											}
+											elseif($saldiran=="3" and $ilkhedef=="7" and $aokcu[0]<=0) {$aokcu[0]=0; return $aokcuyokki;}
+											elseif($saldiran=="3" and $ilkhedef=="7" and $bmancinik[0]<=0) return saldiranx(3,rand(1,7));
+									if($saldiran=="4" and $ilkhedef=="1" and $bmusellem[0]>=1 and $ayeniceri[0]>=1 ) 
+											{
+										$oran=3;
+											$kayiporani=(($birim["Bmusellem"]['can'] * $bmusellem[0] ) - (($birim["Ayeniceri"]['guc'] * $ayeniceri[0])*$oran)) / ($birim["Bmusellem"]['can']*$bmusellem[0]);
+											$bmusellem[0]=round($kayiporani * $bmusellem[0]);
+											if($bmusellem[0]<=0 and $ayeniceri[0]>=1)
+											{
+												return $bmusellemyok.'Müsellem : '.$bmusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$bmusellem[0];
+											}
+											elseif($saldiran=="4" and $ilkhedef=="1" and $ayeniceri[0]<=0) {$ayeniceri[0]=0; return $ayeniceriyokki;}
+											elseif($saldiran=="4" and $ilkhedef=="1" and $bmusellem[0]<=0) return saldiranx(4,rand(1,7));
+									
+									if($saldiran=="4" and $ilkhedef=="2" and $bsipahi[0]>=1 and $ayeniceri[0]>=1 ) 
+											{
+										$oran=1.5;
+											$kayiporani=(($birim["Bsipahi"]['can'] * $bsipahi[0] ) - ($birim["Ayeniceri"]['guc'] * $ayeniceri[0])*$oran) / ($birim["Bsipahi"]['can']*$bsipahi[0]);
+											$bsipahi[0]=round($kayiporani * $bsipahi[0]);
+											if($bsipahi[0]<=0 and $ayeniceri[0]>=1)
+											{
+												return $bsipahiyok.'Sipahi : '.$bsipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$bsipahi[0];
+											}
+											elseif($saldiran=="4" and $ilkhedef=="2" and $ayeniceri[0]<=0) {$ayeniceri[0]=0; return $ayeniceriyokki;}
+											elseif($saldiran=="4" and $ilkhedef=="2" and $bsipahi[0]<=0) return saldiranx(4,rand(1,7));
+									
+									if($saldiran=="4" and $ilkhedef=="3" and $bokcu[0]>=1 and $ayeniceri[0]>=1 ) 
+											{
+										$oran=1.2;
+											$kayiporani=(($birim["Bokcu"]['can'] * $bokcu[0] ) - ($birim["Ayeniceri"]['guc'] * $ayeniceri[0])*$oran) / ($birim["Bokcu"]['can']*$bokcu[0]);
+											$bokcu[0]=round($kayiporani * $bokcu[0]);
+											if($bokcu[0]<=0 and $ayeniceri[0]>=1)
+											{
+												return $bokcuyok.'Okçu : '.$bokcu[0]=0;
+											}else return 'Düşman Okçu : '.$bokcu[0];
+											}
+											elseif($saldiran=="4" and $ilkhedef=="3" and $ayeniceri[0]<=0) {$ayeniceri[0]=0; return $ayeniceriyokki;}
+											elseif($saldiran=="4" and $ilkhedef=="3" and $bokcu[0]<=0) return saldiranx(4,rand(1,7));
+									if($saldiran=="4" and $ilkhedef=="4" and $byeniceri[0]>=1 and $ayeniceri[0]>=1 ) 
+											{
+										$oran=1;
+											$kayiporani=(($birim["Byeniceri"]['can'] * $byeniceri[0] ) - ($birim["Ayeniceri"]['guc'] * $ayeniceri[0])*$oran) / ($birim["Byeniceri"]['can']*$byeniceri[0]);
+											$byeniceri[0]=round($kayiporani * $byeniceri[0]);
+											if($byeniceri[0]<=0 and $ayeniceri[0]>=1)
+											{
+												return $byeniceriyok.'Yeniçeri : '.$byeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$byeniceri[0];
+											}
+											elseif($saldiran=="4" and $ilkhedef=="4" and $ayeniceri[0]<=0) {$ayeniceri[0]=0; return $ayeniceriyokki;}
+											elseif($saldiran=="4" and $ilkhedef=="4" and $byeniceri[0]<=0) return saldiranx(4,rand(1,7));
+									if($saldiran=="4" and $ilkhedef=="5" and $batliokcu[0]>=1 and $ayeniceri[0]>=1 ) 
+											{
+										$oran=0.5;
+											$kayiporani=(($birim["Batliokcu"]['can'] * $batliokcu[0] ) - ($birim["Ayeniceri"]['guc'] * $ayeniceri[0])*$oran) / ($birim["Batliokcu"]['can']*$batliokcu[0]);
+											$batliokcu[0]=round($kayiporani * $batliokcu[0]);
+											if($batliokcu[0]<=0 and $ayeniceri[0]>=1)
+											{
+												return $batliokcuyok.'Atlı Okçu : '.$batliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$batliokcu[0];
+											}
+											elseif($saldiran=="4" and $ilkhedef=="5" and $ayeniceri[0]<=0) {$ayeniceri[0]=0; return $ayeniceriyokki;}
+											elseif($saldiran=="4" and $ilkhedef=="5" and $batliokcu[0]<=0) return saldiranx(4,rand(1,7));
+									if($saldiran=="4" and $ilkhedef=="6" and $bakrep[0]>=1 and $ayeniceri[0]>=1 ) 
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Bakrep"]['can'] * $bakrep[0] ) - ($birim["Ayeniceri"]['guc'] * $ayeniceri[0])*$oran) / ($birim["Bakrep"]['can']*$bakrep[0]);
+											$bakrep[0]=round($kayiporani * $bakrep[0]);
+											if($bakrep[0]<=0 and $ayeniceri[0]>=1)
+											{
+												return $bakrepyok.'Akrep : '.$bakrep[0]=0;
+											}else return 'Düşman Akrep : '.$bakrep[0];
+											}
+											elseif($saldiran=="4" and $ilkhedef=="6" and $ayeniceri[0]<=0) {$ayeniceri[0]=0; return $ayeniceriyokki;}
+											elseif($saldiran=="4" and $ilkhedef=="6" and $bakrep[0]<=0) return saldiranx(4,rand(1,7));
+									if($saldiran=="4" and $ilkhedef=="7" and $bmancinik[0]>=1 and $ayeniceri[0]>=1 ) 
+											{
+										$oran=0.3;
+											$kayiporani=(($birim["Bmancinik"]['can'] * $bmancinik[0] ) - ($birim["Ayeniceri"]['guc'] * $ayeniceri[0])*$oran) / ($birim["Bmancinik"]['can']*$bmancinik[0]);
+											$bmancinik[0]=round($kayiporani * $bmancinik[0]);
+											if($bmancinik[0]<=0 and $ayeniceri[0]>=1)
+											{
+												return $bmancinikyok.'Mancınık : '.$bmancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$bmancinik[0];
+											}
+											elseif($saldiran=="4" and $ilkhedef=="7" and $ayeniceri[0]<=0) {$ayeniceri[0]=0; return $ayeniceriyokki;}
+											elseif($saldiran=="4" and $ilkhedef=="7" and $bmancinik[0]<=0) return saldiranx(4,rand(1,7));
+									if($saldiran=="5" and $ilkhedef=="1" and $bmusellem[0]>=1 and $aatliokcu[0]>=1 ) 
+											{
+										$oran=5;
+											$kayiporani=(($birim["Bmusellem"]['can'] * $bmusellem[0] ) - (($birim["Aatliokcu"]['guc'] * $aatliokcu[0])*$oran)) / ($birim["Bmusellem"]['can']*$bmusellem[0]);
+											$bmusellem[0]=round($kayiporani * $bmusellem[0]);
+											if($bmusellem[0]<=0 and $aatliokcu[0]>=1)
+											{
+												return $bmusellemyok.'Müsellem : '.$bmusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$bmusellem[0];
+											}
+											elseif($saldiran=="5" and $ilkhedef=="1" and $aatliokcu[0]<=0) {$aatliokcu[0]=0; return $aatliokcuyokki;}
+											elseif($saldiran=="5" and $ilkhedef=="1" and $bmusellem[0]<=0) return saldiranx(5,rand(1,7));
+									
+									if($saldiran=="5" and $ilkhedef=="2" and $bsipahi[0]>=1 and $aatliokcu[0]>=1 ) 
+											{
+										$oran=4;
+											$kayiporani=(($birim["Bsipahi"]['can'] * $bsipahi[0] ) - ($birim["Aatliokcu"]['guc'] * $aatliokcu[0])*$oran) / ($birim["Bsipahi"]['can']*$bsipahi[0]);
+											$bsipahi[0]=round($kayiporani * $bsipahi[0]);
+											if($bsipahi[0]<=0 and $aatliokcu[0]>=1)
+											{
+												return $bsipahiyok.'Sipahi : '.$bsipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$bsipahi[0];
+											}
+											elseif($saldiran=="5" and $ilkhedef=="2" and $aatliokcu[0]<=0) {$aatliokcu[0]=0; return $aatliokcuyokki;}
+											elseif($saldiran=="5" and $ilkhedef=="2" and $bsipahi[0]<=0) return saldiranx(5,rand(1,7));
+									
+									if($saldiran=="5" and $ilkhedef=="3" and $bokcu[0]>=1 and $aatliokcu[0]>=1 )  
+											{
+										$oran=3;
+											$kayiporani=(($birim["Bokcu"]['can'] * $bokcu[0] ) - ($birim["Aatliokcu"]['guc'] * $aatliokcu[0])*$oran) / ($birim["Bokcu"]['can']*$bokcu[0]);
+											$bokcu[0]=round($kayiporani * $bokcu[0]);
+											if($bokcu[0]<=0 and $aatliokcu[0]>=1)
+											{
+												return $bokcuyok.'Okçu : '.$bokcu[0]=0;
+											}else return 'Düşman Okçu : '.$bokcu[0];
+											}
+											elseif($saldiran=="5" and $ilkhedef=="3" and $aatliokcu[0]<=0) {$aatliokcu[0]=0; return $aatliokcuyokki;}
+											elseif($saldiran=="5" and $ilkhedef=="3" and $bokcu[0]<=0) return saldiranx(5,rand(1,7));
+									if($saldiran=="5" and $ilkhedef=="4" and $byeniceri[0]>=1 and $aatliokcu[0]>=1 )  
+											{
+										$oran=2;
+											$kayiporani=(($birim["Byeniceri"]['can'] * $byeniceri[0] ) - ($birim["Aatliokcu"]['guc'] * $aatliokcu[0])*$oran) / ($birim["Byeniceri"]['can']*$byeniceri[0]);
+											$byeniceri[0]=round($kayiporani * $byeniceri[0]);
+											if($byeniceri[0]<=0 and $aatliokcu[0]>=1)
+											{
+												return $byeniceriyok.'Yeniçeri : '.$byeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$byeniceri[0];
+											}
+											elseif($saldiran=="5" and $ilkhedef=="4" and $aatliokcu[0]<=0) {$aatliokcu[0]=0; return $aatliokcuyokki;}
+											elseif($saldiran=="5" and $ilkhedef=="4" and $byeniceri[0]<=0) return saldiranx(5,rand(1,7));
+									if($saldiran=="5" and $ilkhedef=="5" and $batliokcu[0]>=1 and $aatliokcu[0]>=1 )  
+											{
+										$oran=1;
+											$kayiporani=(($birim["Batliokcu"]['can'] * $batliokcu[0] ) - ($birim["Aatliokcu"]['guc'] * $aatliokcu[0])*$oran) / ($birim["Batliokcu"]['can']*$batliokcu[0]);
+											$batliokcu[0]=round($kayiporani * $batliokcu[0]);
+											if($batliokcu[0]<=0 and $aatliokcu[0]>=1)
+											{
+												return $batliokcuyok.'Atlı Okçu : '.$batliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$batliokcu[0];
+											}
+											elseif($saldiran=="5" and $ilkhedef=="5" and $aatliokcu[0]<=0) {$aatliokcu[0]=0; return $aatliokcuyokki;}
+											elseif($saldiran=="5" and $ilkhedef=="5" and $batliokcu[0]<=0) return saldiranx(5,rand(1,7));
+									if($saldiran=="5" and $ilkhedef=="6" and $bakrep[0]>=1 and $aatliokcu[0]>=1 )  
+											{
+										$oran=0.8;
+											$kayiporani=(($birim["Bakrep"]['can'] * $bakrep[0] ) - ($birim["Aatliokcu"]['guc'] * $aatliokcu[0])* $oran) / ($birim["Bakrep"]['can']*$bakrep[0]);
+											$bakrep[0]=round($kayiporani * $bakrep[0]);
+											if($bakrep[0]<=0 and $aatliokcu[0]>=1)
+											{
+												return $bakrepyok.'Akrep : '.$bakrep[0]=0;
+											}else return 'Düşman Akrep : '.$bakrep[0];
+											}
+											elseif($saldiran=="5" and $ilkhedef=="6" and $aatliokcu[0]<=0) {$aatliokcu[0]=0; return $aatliokcuyokki;}
+											elseif($saldiran=="5" and $ilkhedef=="6" and $bakrep[0]<=0) return saldiranx(5,rand(1,7));
+									if($saldiran=="5" and $ilkhedef=="7" and $bmancinik[0]>=1 and $aatliokcu[0]>=1 )  
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Bmancinik"]['can'] * $bmancinik[0] ) - ($birim["Aatliokcu"]['guc'] * $aatliokcu[0])*$oran) / ($birim["Bmancinik"]['can']*$bmancinik[0]);
+											$bmancinik[0]=round($kayiporani * $bmancinik[0]);
+											if($bmancinik[0]<=0 and $aatliokcu[0]>=1)
+											{
+												return $bmancinikyok.'Mancınık : '.$bmancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$bmancinik[0];
+											}
+											elseif($saldiran=="5" and $ilkhedef=="7" and $aatliokcu[0]<=0) {$aatliokcu[0]=0; return $aatliokcuyokki;}
+											elseif($saldiran=="5" and $ilkhedef=="7" and $bmancinik[0]<=0) return saldiranx(5,rand(1,7));
+									if($saldiran=="6" and $ilkhedef=="1" and $bmusellem[0]>=1 and $aakrep[0]>=1 )  
+											{
+										$oran=15;
+											$kayiporani=(($birim["Bmusellem"]['can'] * $bmusellem[0] ) - (($birim["Aakrep"]['guc'] * $aakrep[0])*$oran)) / ($birim["Bmusellem"]['can']*$bmusellem[0]);
+											$bmusellem[0]=round($kayiporani * $bmusellem[0]);
+											if($bmusellem[0]<=0 and $aakrep[0]>=1)
+											{
+												return $bmusellemyok.'Müsellem : '.$bmusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$bmusellem[0];
+											}
+											elseif($saldiran=="6" and $ilkhedef=="1" and $aakrep[0]<=0) {$aakrep[0]=0; return $aakrepyokki;}
+											elseif($saldiran=="6" and $ilkhedef=="1" and $bmusellem[0]<=0) return saldiranx(6,rand(1,7));
+									
+									if($saldiran=="6" and $ilkhedef=="2" and $bsipahi[0]>=1 and $aakrep[0]>=1 ) 
+											{
+										$oran=10;
+											$kayiporani=(($birim["Bsipahi"]['can'] * $bsipahi[0] ) - ($birim["Aakrep"]['guc'] * $aakrep[0])*$oran) / ($birim["Bsipahi"]['can']*$bsipahi[0]);
+											$bsipahi[0]=round($kayiporani * $bsipahi[0]);
+											if($bsipahi[0]<=0 and $aakrep[0]>=1)
+											{
+												return $bsipahiyok.'Sipahi : '.$bsipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$bsipahi[0];
+											}
+											elseif($saldiran=="6" and $ilkhedef=="2" and $aakrep[0]<=0) {$aakrep[0]=0; return $aakrepyokki;}
+											elseif($saldiran=="6" and $ilkhedef=="2" and $bsipahi[0]<=0) return saldiranx(6,rand(1,7));
+									
+									if($saldiran=="6" and $ilkhedef=="3" and $bokcu[0]>=1 and $aakrep[0]>=1 ) 
+											{
+										$oran=5;
+											$kayiporani=(($birim["Bokcu"]['can'] * $bokcu[0] ) - ($birim["Aakrep"]['guc'] * $aakrep[0])*$oran) / ($birim["Bokcu"]['can']*$bokcu[0]);
+											$bokcu[0]=round($kayiporani * $bokcu[0]);
+											if($bokcu[0]<=0 and $aakrep[0]>=1)
+											{
+												return $bokcuyok.'Okçu : '.$bokcu[0]=0;
+											}else return 'Düşman Okçu : '.$bokcu[0];
+											}
+											elseif($saldiran=="6" and $ilkhedef=="3" and $aakrep[0]<=0) {$aakrep[0]=0; return $aakrepyokki;}
+											elseif($saldiran=="6" and $ilkhedef=="3" and $bokcu[0]<=0) return saldiranx(6,rand(1,7));
+									if($saldiran=="6" and $ilkhedef=="4" and $byeniceri[0]>=1 and $aakrep[0]>=1 )
+											{
+										$oran=2;
+											$kayiporani=(($birim["Byeniceri"]['can'] * $byeniceri[0] ) - ($birim["Aakrep"]['guc'] * $aakrep[0])*$oran) / ($birim["Byeniceri"]['can']*$byeniceri[0]);
+											$byeniceri[0]=round($kayiporani * $byeniceri[0]);
+											if($byeniceri[0]<=0 and $aakrep[0]>=1)
+											{
+												return $byeniceriyok.'Yeniçeri : '.$byeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$byeniceri[0];
+											}
+											elseif($saldiran=="6" and $ilkhedef=="4" and $aakrep[0]<=0) {$aakrep[0]=0; return $aakrepyokki;}
+											elseif($saldiran=="6" and $ilkhedef=="4" and $byeniceri[0]<=0) return saldiranx(6,rand(1,7));
+									if($saldiran=="6" and $ilkhedef=="5" and $batliokcu[0]>=1 and $aakrep[0]>=1 ) 
+											{
+										$oran=1;
+											$kayiporani=(($birim["Batliokcu"]['can'] * $batliokcu[0] ) - ($birim["Aakrep"]['guc'] * $aakrep[0])*$oran) / ($birim["Batliokcu"]['can']*$batliokcu[0]);
+											$batliokcu[0]=round($kayiporani * $batliokcu[0]);
+											if($batliokcu[0]<=0 and $aakrep[0]>=1)
+											{
+												return $batliokcuyok.'Atlı Okçu : '.$batliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$batliokcu[0];
+											}
+											elseif($saldiran=="6" and $ilkhedef=="5" and $aakrep[0]<=0) {$aakrep[0]=0; return $aakrepyokki;}
+											elseif($saldiran=="6" and $ilkhedef=="5" and $batliokcu[0]<=0) return saldiranx(6,rand(1,7));
+									if($saldiran=="6" and $ilkhedef=="6" and $bakrep[0]>=1 and $aakrep[0]>=1 ) 
+											{
+										$oran=1;
+											$kayiporani=(($birim["Bakrep"]['can'] * $bakrep[0] ) - ($birim["Aakrep"]['guc'] * $aakrep[0])*$oran) / ($birim["Bakrep"]['can']*$bakrep[0]);
+											$bakrep[0]=round($kayiporani * $bakrep[0]);
+											if($bakrep[0]<=0 and $aakrep[0]>=1)
+											{
+												return $bakrepyok.'Akrep : '.$bakrep[0]=0;
+											}else return 'Düşman Akrep : '.$bakrep[0];
+											}
+											elseif($saldiran=="6" and $ilkhedef=="6" and $aakrep[0]<=0) {$aakrep[0]=0; return $aakrepyokki;}
+											elseif($saldiran=="6" and $ilkhedef=="6" and $bakrep[0]<=0) return saldiranx(6,rand(1,7));
+									if($saldiran=="6" and $ilkhedef=="7" and $bmancinik[0]>=1 and $aakrep[0]>=1 ) 
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Bmancinik"]['can'] * $bmancinik[0] ) - ($birim["Aakrep"]['guc'] * $aakrep[0])*$oran) / ($birim["Bmancinik"]['can']*$bmancinik[0]);
+											$bmancinik[0]=round($kayiporani * $bmancinik[0]);
+											if($bmancinik[0]<=0 and $aakrep[0]>=1)
+											{
+												return $bmancinikyok.'Mancınık : '.$bmancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$bmancinik[0];
+											}
+											elseif($saldiran=="6" and $ilkhedef=="7" and $aakrep[0]<=0) {$aakrep[0]=0; return $aakrepyokki;}
+											elseif($saldiran=="6" and $ilkhedef=="7" and $bmancinik[0]<=0) return saldiranx(6,rand(1,7));
+									if($saldiran=="7" and $ilkhedef=="1" and $bmusellem[0]>=1 and $amancinik[0]>=1 ) 
+											{
+										$oran=30;
+											$kayiporani=(($birim["Bmusellem"]['can'] * $bmusellem[0] ) - (($birim["Amancinik"]['guc'] * $amancinik[0])*$oran)) / ($birim["Bmusellem"]['can']*$bmusellem[0]);
+											$bmusellem[0]=round($kayiporani * $bmusellem[0]);
+											if($bmusellem[0]<=0 and $amancinik[0]>=1)
+											{
+												return $bmusellemyok.'Müsellem : '.$bmusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$bmusellem[0];
+											}
+											elseif($saldiran=="7" and $ilkhedef=="1" and $amancinik[0]<=0) {$amancinik[0]=0; return $amancinikyokki;}
+											elseif($saldiran=="7" and $ilkhedef=="1" and $bmusellem[0]<=0) return saldiranx(7,rand(1,7));
+									
+									if($saldiran=="7" and $ilkhedef=="2" and $bsipahi[0]>=1 and $amancinik[0]>=1 ) 
+											{
+										$oran=15;
+											$kayiporani=(($birim["Bsipahi"]['can'] * $bsipahi[0] ) - ($birim["Amancinik"]['guc'] * $amancinik[0])*$oran) / ($birim["Bsipahi"]['can']*$bsipahi[0]);
+											$bsipahi[0]=round($kayiporani * $bsipahi[0]);
+											if($bsipahi[0]<=0 and $amancinik[0]>=1)
+											{
+												return $bsipahiyok.'Sipahi : '.$bsipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$bsipahi[0];
+											}
+											elseif($saldiran=="7" and $ilkhedef=="2" and $amancinik[0]<=0) {$amancinik[0]=0; return $amancinikyokki;}
+											elseif($saldiran=="7" and $ilkhedef=="2" and $bsipahi[0]<=0) return saldiranx(7,rand(1,7));
+									
+									if($saldiran=="7" and $ilkhedef=="3" and $bokcu[0]>=1 and $amancinik[0]>=1 ) 
+											{
+										$oran=10;
+											$kayiporani=(($birim["Bokcu"]['can'] * $bokcu[0] ) - ($birim["Amancinik"]['guc'] * $amancinik[0])*$oran) / ($birim["Bokcu"]['can']*$bokcu[0]);
+											$bokcu[0]=round($kayiporani * $bokcu[0]);
+											if($bokcu[0]<=0 and $amancinik[0]>=1)
+											{
+												return $bokcuyok.'Okçu : '.$bokcu[0]=0;
+											}else return 'Düşman Okçu : '.$bokcu[0];
+											}
+											elseif($saldiran=="7" and $ilkhedef=="3" and $amancinik[0]<=0) {$amancinik[0]=0; return $amancinikyokki;}
+											elseif($saldiran=="7" and $ilkhedef=="3" and $bokcu[0]<=0) return saldiranx(7,rand(1,7));
+									if($saldiran=="7" and $ilkhedef=="4" and $byeniceri[0]>=1 and $amancinik[0]>=1 ) 
+											{
+										$oran=7;
+											$kayiporani=(($birim["Byeniceri"]['can'] * $byeniceri[0] ) - ($birim["Amancinik"]['guc'] * $amancinik[0])*$oran) / ($birim["Byeniceri"]['can']*$byeniceri[0]);
+											$byeniceri[0]=round($kayiporani * $byeniceri[0]);
+											if($byeniceri[0]<=0 and $amancinik[0]>=1)
+											{
+												return $byeniceriyok.'Yeniçeri : '.$byeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$byeniceri[0];
+											}
+											elseif($saldiran=="7" and $ilkhedef=="4" and $amancinik[0]<=0) {$amancinik[0]=0; return $amancinikyokki;}
+											elseif($saldiran=="7" and $ilkhedef=="4" and $byeniceri[0]<=0) return saldiranx(7,rand(1,7));
+									if($saldiran=="7" and $ilkhedef=="5" and $batliokcu[0]>=1 and $amancinik[0]>=1 ) 
+											{
+										$oran=5;
+											$kayiporani=(($birim["Batliokcu"]['can'] * $batliokcu[0] ) - ($birim["Amancinik"]['guc'] * $amancinik[0])*$oran) / ($birim["Batliokcu"]['can']*$batliokcu[0]);
+											$batliokcu[0]=round($kayiporani * $batliokcu[0]);
+											if($batliokcu[0]<=0 and $amancinik[0]>=1)
+											{
+												return $batliokcuyok.'Atlı Okçu : '.$batliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$batliokcu[0];
+											}
+											elseif($saldiran=="7" and $ilkhedef=="5" and $amancinik[0]<=0) {$amancinik[0]=0; return $amancinikyokki;}
+											elseif($saldiran=="7" and $ilkhedef=="5" and $batliokcu[0]<=0) return saldiranx(7,rand(1,7));
+									if($saldiran=="7" and $ilkhedef=="6" and $bakrep[0]>=1 and $amancinik[0]>=1 ) 
+											{
+										$oran=3;
+											$kayiporani=(($birim["Bakrep"]['can'] * $bakrep[0] ) - ($birim["Amancinik"]		['guc'] * $amancinik[0])*$oran) / ($birim["Bakrep"]['can']*$bakrep[0]);
+											$bakrep[0]=round($kayiporani * $bakrep[0]);
+											if($bakrep[0]<=0 and $amancinik[0]>=1)
+											{
+												return $bakrepyok.'Akrep : '.$bakrep[0]=0;
+											}else return 'Düşman Akrep : '.$bakrep[0];
+											}
+											elseif($saldiran=="7" and $ilkhedef=="6" and $amancinik[0]<=0) {$amancinik[0]=0; return $amancinikyokki;}
+											elseif($saldiran=="7" and $ilkhedef=="6" and $bakrep[0]<=0) return saldiranx(7,rand(1,7));
+									if($saldiran=="7" and $ilkhedef=="7" and $bmancinik[0]>=1 and $amancinik[0]>=1 ) 
+											{
+										$oran=1;
+											$kayiporani=(($birim["Bmancinik"]['can'] * $bmancinik[0] ) - ($birim["Amancinik"]['guc'] * $amancinik[0])*$oran) / ($birim["Bmancinik"]['can']*$bmancinik[0]);
+											$bmancinik[0]=round($kayiporani * $bmancinik[0]);
+											if($bmancinik[0]<=0 and $amancinik[0]>=1)
+											{
+												return $bmancinikyok.'Mancınık : '.$bmancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$bmancinik[0];
+											}
+											elseif($saldiran=="7" and $ilkhedef=="7" and $amancinik[0]<=0) {$amancinik[0]=0; return $amancinikyokki;}
+											elseif($saldiran=="7" and $ilkhedef=="7" and $bmancinik[0]<=0) return saldiranx(7,rand(1,7));
+					}
+		function savunany($savunan,$ilkhedef) 
+					{
+						
+							global 	$Amusellem,	$amusellem,	$amusellemyok,	$amusellemyokki,	//1
+									$Bmusellem,	$bmusellem,	$bmusellemyok,	$bmusellemyokki,
+									
+									$Asipahi,	$asipahi,	$asipahiyok,	$asipahiyokki,	//2
+									$Bsipahi,	$bsipahi,	$bsipahiyok,	$bsipahiyokki,	
+									
+									$Aokcu,		$aokcu,		$aokcuyok,		$aokcuyokki,		//3
+									$Bokcu,		$bokcu,		$bokcuyok,		$bokcuyokki,
+									
+									$Ayeniceri,	$ayeniceri,	$ayeniceriyok,	$ayeniceriyokki,	//4
+									$Byeniceri,	$byeniceri,	$byeniceriyok,	$byeniceriyokki,
+									
+									$Aatliokcu,	$aatliokcu,	$aatliokcuyok,	$aatliokcuyokki,	//5
+									$Batliokcu,	$batliokcu,	$batliokcuyok,	$batliokcuyokki,
+									
+									$Bakrep,	$aakrep,	$aakrepyok,		$aakrepyokki,		//6
+									$Aakrep,	$bakrep,	$bakrepyok,		$bakrepyokki,
+									
+									$Amancinik,	$amancinik,	$amancinikyok,	$amancinikyokki,	//7
+									$Bmancinik,	$bmancinik,	$bmancinikyok,	$bmancinikyokki,
+									$birim,		$hdf1,
+									$hdf2;
+
+									$oran=1;
+									echo '<center>';
+									if($savunan=="1" and $ilkhedef=="1" and $amusellem[0]>=1 and $bmusellem[0]>=1 ) 
+											{
+											$kayiporani=(($birim["Amusellem"]['can'] * $amusellem[0] ) - ($birim["Bmusellem"]['guc'] * $bmusellem[0])*$oran) / ($birim["Amusellem"]['can']*$amusellem[0]);
+											$amusellem[0]=round($kayiporani * $amusellem[0]).'<br>';
+											if($amusellem[0]<=0 and $bmusellem[0]>=1)
+											{
+												return $amusellemyok.'Müsellem : '.$amusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$amusellem[0];
+											}
+											elseif($savunan=="1" and $ilkhedef=="1" and $bmusellem[0]<=0) {$bmusellem[0]=0; return $bmusellemyokki;}
+											elseif($savunan=="1" and $ilkhedef=="1" and $amusellem[0]<=0) return savunany(1,rand(1,7));
+									
+									if($savunan=="1" and $ilkhedef=="2" and $asipahi[0]>=1 and $bmusellem[0]>=1 ) 
+											{
+										$oran=0.5;
+											$kayiporani=(($birim["Asipahi"]['can'] * $asipahi[0] ) - ($birim["Bmusellem"]['guc'] * $bmusellem[0])*$oran) / ($birim["Asipahi"]['can']*$asipahi[0]);
+											$asipahi[0]=round($kayiporani * $asipahi[0]);
+											if($asipahi[0]<=0 and $bmusellem[0]>=1)
+											{
+												return $asipahiyok.'Sipahi : '.$asipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$asipahi[0];
+											}
+											elseif($savunan=="1" and $ilkhedef=="2" and $bmusellem[0]<=0) {$bmusellem[0]=0; return $bmusellemyokki;}
+											elseif($savunan=="1" and $ilkhedef=="2" and $asipahi[0]<=0) return savunany(1,rand(1,7));
+									
+									if($savunan=="1" and $ilkhedef=="3" and $aokcu[0]>=1 and $bmusellem[0]>=1 ) 
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Aokcu"]['can'] * $aokcu[0] ) - ($birim["Bmusellem"]['guc'] * $bmusellem[0])*$oran) / ($birim["Aokcu"]['can']*$aokcu[0]);
+											$aokcu[0]=round($kayiporani * $aokcu[0]);
+											if($aokcu[0]<=0 and $bmusellem[0]>=1)
+											{
+												return $aokcuyok.'Okçu : '.$aokcu[0]=0;
+											}else return 'Düşman Okçu : '.$aokcu[0];
+											}
+											elseif($savunan=="1" and $ilkhedef=="3" and $bmusellem[0]<=0) {$bmusellem[0]=0; return $bmusellemyokki;}
+											elseif($savunan=="1" and $ilkhedef=="3" and $aokcu[0]<=0) return savunany(1,rand(1,7));
+									if($savunan=="1" and $ilkhedef=="4" and $ayeniceri[0]>=1 and $bmusellem[0]>=1 )  
+											{
+										$oran=0.3;
+											$kayiporani=(($birim["Ayeniceri"]['can'] * $ayeniceri[0] ) - ($birim["Bmusellem"]['guc'] * $bmusellem[0])*$oran) / ($birim["Ayeniceri"]['can']*$ayeniceri[0]);
+											$ayeniceri[0]=round($kayiporani * $ayeniceri[0]);
+											if($ayeniceri[0]<=0 and $bmusellem[0]>=1)
+											{
+												return $ayeniceriyok.'Yeniçeri : '.$ayeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$ayeniceri[0];
+											}
+											elseif($savunan=="1" and $ilkhedef=="4" and $bmusellem[0]<=0) {$bmusellem[0]=0; return $bmusellemyokki;}
+											elseif($savunan=="1" and $ilkhedef=="4" and $ayeniceri[0]<=0) return savunany(1,rand(1,7));
+									if($savunan=="1" and $ilkhedef=="5" and $aatliokcu[0]>=1 and $bmusellem[0]>=1 )  
+											{
+										$oran=0.2;
+											$kayiporani=(($birim["Aatliokcu"]['can'] * $aatliokcu[0] ) - ($birim["Bmusellem"]['guc'] * $bmusellem[0])*$oran) / ($birim["Aatliokcu"]['can']*$aatliokcu[0]);
+											$aatliokcu[0]=round($kayiporani * $aatliokcu[0]);
+											if($aatliokcu[0]<=0 and $bmusellem[0]>=1)
+											{
+												return $aatliokcuyok.'Atlı Okçu : '.$aatliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$aatliokcu[0];
+											}
+											elseif($savunan=="1" and $ilkhedef=="5" and $bmusellem[0]<=0) {$bmusellem[0]=0; return $bmusellemyokki;}
+											elseif($savunan=="1" and $ilkhedef=="5" and $aatliokcu[0]<=0) return savunany(1,rand(1,7));
+									if($savunan=="1" and $ilkhedef=="6" and $aakrep[0]>=1 and $bmusellem[0]>=1 )  
+											{
+										$oran=0.1;
+											$kayiporani=(($birim["Aakrep"]['can'] * $aakrep[0] ) - ($birim["Bmusellem"]['guc'] * $bmusellem[0])*$oran) / ($birim["Aakrep"]['can']*$aakrep[0]);
+											$aakrep[0]=round($kayiporani * $aakrep[0]);
+											if($aakrep[0]<=0 and $bmusellem[0]>=1)
+											{
+												return $aakrepyok.'Akrep : '.$aakrep[0]=0;
+											}else return 'Düşman Akrep : '.$aakrep[0];
+											}
+											elseif($savunan=="1" and $ilkhedef=="6" and $bmusellem[0]<=0) {$bmusellem[0]=0; return $bmusellemyokki;}
+											elseif($savunan=="1" and $ilkhedef=="6" and $aakrep[0]<=0) return savunany(1,rand(1,7));
+									if($savunan=="1" and $ilkhedef=="7" and $amancinik[0]>=1 and $bmusellem[0]>=1 )  
+											{
+										$oran=0.06;
+											$kayiporani=(($birim["Amancinik"]['can'] * $amancinik[0] ) - ($birim["Bmusellem"]['guc'] * $bmusellem[0])*$oran) / ($birim["Amancinik"]['can']*$amancinik[0]);
+											$amancinik[0]=round($kayiporani * $amancinik[0]);
+											if($amancinik[0]<=0 and $bmusellem[0]>=1)
+											{
+												return $amancinikyok.'Mancınık : '.$amancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$amancinik[0];
+											}
+											elseif($savunan=="1" and $ilkhedef=="7" and $bmusellem[0]<=0) {$bmusellem[0]=0; return $bmusellemyokki;}
+											elseif($savunan=="1" and $ilkhedef=="7" and $amancinik[0]<=0) return savunany(1,rand(1,7));
+									
+									if($savunan=="2" and $ilkhedef=="1" and $amusellem[0]>=1 and $bsipahi[0]>=1 )  
+											{
+										$oran=2.0;
+											$kayiporani=(($birim["Amusellem"]['can'] * $amusellem[0] ) - ($birim["Bsipahi"]['guc'] * $bsipahi[0])*$oran) / ($birim["Amusellem"]['can']*$amusellem[0]);
+											$amusellem[0]=round($kayiporani * $amusellem[0]);
+											if($amusellem[0]<=0 and $bsipahi[0]>=1)
+											{
+												return $amusellemyok.'Müsellem : '.$amusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$amusellem[0];
+											}
+											elseif($savunan=="2" and $ilkhedef=="1" and $bsipahi[0]<=0) {$bsipahi[0]=0; return $bsipahiyokki;}
+											elseif($savunan=="2" and $ilkhedef=="1" and $amusellem[0]<=0) return savunany(2,rand(1,7));
+									
+									if($savunan=="2" and $ilkhedef=="2" and $asipahi[0]>=1 and $bsipahi[0]>=1 ) 
+											{
+										$oran=1.0;
+											$kayiporani=(($birim["Asipahi"]['can'] * $asipahi[0] ) - ($birim["Bsipahi"]['guc'] * $bsipahi[0])*$oran) / ($birim["Asipahi"]['can']*$asipahi[0]);
+											$asipahi[0]=round($kayiporani * $asipahi[0]);
+											if($asipahi[0]<=0 and $bsipahi[0]>=1)
+											{
+												return $asipahiyok.'Sipahi : '.$asipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$asipahi[0];
+											}
+											elseif($savunan=="2" and $ilkhedef=="2" and $bsipahi[0]<=0) {$bsipahi[0]=0; return $bsipahiyokki;}
+											elseif($savunan=="2" and $ilkhedef=="2" and $asipahi[0]<=0) return savunany(2,rand(1,7));
+									
+									if($savunan=="2" and $ilkhedef=="3" and $aokcu[0]>=1 and $bsipahi[0]>=1 )  
+											{
+										$oran=0.8;
+											$kayiporani=(($birim["Aokcu"]['can'] * $aokcu[0] ) - ($birim["Bsipahi"]['guc'] * $bsipahi[0])*$oran) / ($birim["Aokcu"]['can']*$aokcu[0]);
+											$aokcu[0]=round($kayiporani * $aokcu[0]);
+											if($aokcu[0]<=0 and $bsipahi[0]>=1)
+											{
+												return $aokcuyok.'Okçu : '.$aokcu[0]=0;
+											}else return 'Düşman Okçu : '.$aokcu[0];
+											}
+											elseif($savunan=="2" and $ilkhedef=="3" and $bsipahi[0]<=0) {$bsipahi[0]=0; return $bsipahiyokki;}
+											elseif($savunan=="2" and $ilkhedef=="3" and $aokcu[0]<=0) return savunany(2,rand(1,7));
+									if($savunan=="2" and $ilkhedef=="4" and $ayeniceri[0]>=1 and $bsipahi[0]>=1 )  
+											{
+										$oran=0.5;
+											$kayiporani=(($birim["Ayeniceri"]['can'] * $ayeniceri[0] ) - ($birim["Bsipahi"]['guc'] * $bsipahi[0])*$oran) / ($birim["Ayeniceri"]['can']*$ayeniceri[0]);
+											$ayeniceri[0]=round($kayiporani * $ayeniceri[0]);
+											if($ayeniceri[0]<=0 and $bsipahi[0]>=1)
+											{
+												return $ayeniceriyok.'Yeniçeri : '.$ayeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$ayeniceri[0];
+											}
+											elseif($savunan=="2" and $ilkhedef=="4" and $bsipahi[0]<=0) {$bsipahi[0]=0; return $bsipahiyokki;}
+											elseif($savunan=="2" and $ilkhedef=="4" and $ayeniceri[0]<=0) return savunany(2,rand(1,7));
+									if($savunan=="2" and $ilkhedef=="5" and $aatliokcu[0]>=1 and $bsipahi[0]>=1 )  
+											{
+										$oran=0.25;
+											$kayiporani=(($birim["Aatliokcu"]['can'] * $aatliokcu[0] ) - ($birim["Bsipahi"]['guc'] * $bsipahi[0])*$oran) / ($birim["Aatliokcu"]['can']*$aatliokcu[0]);
+											$aatliokcu[0]=round($kayiporani * $aatliokcu[0]);
+											if($aatliokcu[0]<=0 and $bsipahi[0]>=1)
+											{
+												return $aatliokcuyok.'Atlı Okçu : '.$aatliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$aatliokcu[0];
+											}
+											elseif($savunan=="2" and $ilkhedef=="5" and $bsipahi[0]<=0) {$bsipahi[0]=0; return $bsipahiyokki;}
+											elseif($savunan=="2" and $ilkhedef=="5" and $aatliokcu[0]<=0) return savunany(2,rand(1,7));
+									if($savunan=="2" and $ilkhedef=="6" and $aakrep[0]>=1 and $bsipahi[0]>=1 )  
+											{
+										$oran=0.15;
+											$kayiporani=(($birim["Aakrep"]['can'] * $aakrep[0] ) - ($birim["Bsipahi"]['guc'] * $bsipahi[0])*$oran) / ($birim["Aakrep"]['can']*$aakrep[0]);
+											$aakrep[0]=round($kayiporani * $aakrep[0]);
+											if($aakrep[0]<=0 and $bsipahi[0]>=1)
+											{
+												return $aakrepyok.'Akrep : '.$aakrep[0]=0;
+											}else return 'Düşman Akrep : '.$aakrep[0];
+											}
+											elseif($savunan=="2" and $ilkhedef=="6" and $bsipahi[0]<=0) {$bsipahi[0]=0; return $bsipahiyokki;}
+											elseif($savunan=="2" and $ilkhedef=="6" and $aakrep[0]<=0) return savunany(2,rand(1,7));
+									if($savunan=="2" and $ilkhedef=="7" and $amancinik[0]>=1 and $bsipahi[0]>=1 )  
+											{
+										$oran=0.1;
+											$kayiporani=(($birim["Amancinik"]['can'] * $amancinik[0] ) - ($birim["Bsipahi"]['guc'] * $bsipahi[0])*$oran) / ($birim["Amancinik"]['can']*$amancinik[0]);
+											$amancinik[0]=round($kayiporani * $amancinik[0]);
+											if($amancinik[0]<=0 and $bsipahi[0]>=1)
+											{
+												return $amancinikyok.'Mancınık : '.$amancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$amancinik[0];
+											}
+											elseif($savunan=="2" and $ilkhedef=="7" and $bsipahi[0]<=0) {$bsipahi[0]=0; return $bsipahiyokki;}
+											elseif($savunan=="2" and $ilkhedef=="7" and $amancinik[0]<=0) return savunany(2,rand(1,7));
+									
+									if($savunan=="3" and $ilkhedef=="1" and $amusellem[0]>=1 and $bsipahi[0]>=1 ) 
+											{
+										$oran=2.5;
+											$kayiporani=(($birim["Amusellem"]['can'] * $amusellem[0] ) - (($birim["Bokcu"]['guc'] * $bokcu[0])*$oran)) / ($birim["Amusellem"]['can']*$amusellem[0]);
+											$amusellem[0]=round($kayiporani * $amusellem[0]);
+											if($amusellem[0]<=0 and $bokcu[0]>=1)
+											{
+												return $amusellemyok.'Müsellem : '.$amusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$amusellem[0];
+											}
+											elseif($savunan=="3" and $ilkhedef=="1" and $bokcu[0]<=0) {$bokcu[0]=0; return $bokcuyokki;}
+											elseif($savunan=="3" and $ilkhedef=="1" and $amusellem[0]<=0) return savunany(3,rand(1,7));
+									
+									if($savunan=="3" and $ilkhedef=="2" and $asipahi[0]>=1 and $bokcu[0]>=1 ) 
+											{
+										$oran=1.2;
+											$kayiporani=(($birim["Asipahi"]['can'] * $asipahi[0] ) - ($birim["Bokcu"]['guc'] * $bokcu[0])*$oran) / ($birim["Asipahi"]['can']*$asipahi[0]);
+											$asipahi[0]=round($kayiporani * $asipahi[0]);
+											if($asipahi[0]<=0 and $bokcu[0]>=1)
+											{
+												return $asipahiyok.'Sipahi : '.$asipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$asipahi[0];
+											}
+											elseif($savunan=="3" and $ilkhedef=="2" and $bokcu[0]<=0) {$bokcu[0]=0; return $bokcuyokki;}
+											elseif($savunan=="3" and $ilkhedef=="2" and $asipahi[0]<=0) return savunany(3,rand(1,7));
+									
+									if($savunan=="3" and $ilkhedef=="3" and $aokcu[0]>=1 and $bokcu[0]>=1 )  
+											{
+										$oran=1.0;
+											$kayiporani=(($birim["Aokcu"]['can'] * $aokcu[0] ) - ($birim["Bokcu"]['guc'] * $bokcu[0])*$oran) / ($birim["Aokcu"]['can']*$aokcu[0]);
+											$aokcu[0]=round($kayiporani * $aokcu[0]);
+											if($aokcu[0]<=0 and $bokcu[0]>=1)
+											{
+												return $aokcuyok.'Okçu : '.$aokcu[0]=0;
+											}else return 'Düşman Okçu : '.$aokcu[0];
+											}
+											elseif($savunan=="3" and $ilkhedef=="3" and $bokcu[0]<=0) {$bokcu[0]=0; return $bokcuyokki;}
+											elseif($savunan=="3" and $ilkhedef=="3" and $aokcu[0]<=0) return savunany(3,rand(1,7));
+									if($savunan=="3" and $ilkhedef=="4" and $ayeniceri[0]>=1 and $bokcu[0]>=1 )  
+											{
+										$oran=0.8;
+											$kayiporani=(($birim["Ayeniceri"]['can'] * $ayeniceri[0] ) - ($birim["Bokcu"]['guc'] * $bokcu[0])*$oran) / ($birim["Ayeniceri"]['can']*$ayeniceri[0]);
+											$ayeniceri[0]=round($kayiporani * $ayeniceri[0]);
+											if($ayeniceri[0]<=0 and $bokcu[0]>=1)
+											{
+												return $ayeniceriyok.'Yeniçeri : '.$ayeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$ayeniceri[0];
+											}
+											elseif($savunan=="3" and $ilkhedef=="4" and $bokcu[0]<=0) {$bokcu[0]=0; return $bokcuyokki;}
+											elseif($savunan=="3" and $ilkhedef=="4" and $ayeniceri[0]<=0) return savunany(3,rand(1,7));
+									if($savunan=="3" and $ilkhedef=="5" and $aatliokcu[0]>=1 and $bokcu[0]>=1 )   
+											{
+										$oran=0.3;
+											$kayiporani=(($birim["Aatliokcu"]['can'] * $aatliokcu[0] ) - ($birim["Bokcu"]['guc'] * $bokcu[0])*$oran) / ($birim["Aatliokcu"]['can']*$aatliokcu[0]);
+											$aatliokcu[0]=round($kayiporani * $aatliokcu[0]);
+											if($aatliokcu[0]<=0 and $bokcu[0]>=1)
+											{
+												return $aatliokcuyok.'Atlı Okçu : '.$aatliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$aatliokcu[0];
+											}
+											elseif($savunan=="3" and $ilkhedef=="5" and $bokcu[0]<=0) {$bokcu[0]=0; return $bokcuyokki;}
+											elseif($savunan=="3" and $ilkhedef=="5" and $aatliokcu[0]<=0) return savunany(3,rand(1,7));
+									if($savunan=="3" and $ilkhedef=="6" and $aakrep[0]>=1 and $bokcu[0]>=1 )   
+											{
+										$oran=0.2;
+											$kayiporani=(($birim["Aakrep"]['can'] * $aakrep[0] ) - ($birim["Bokcu"]['guc'] * $bokcu[0])*$oran) / ($birim["Aakrep"]['can']*$aakrep[0]);
+											$tur1_kalan=round($kayiporani * $aakrep[0]);
+											if($aakrep[0]<=0 and $bokcu[0]>=1)
+											{
+												return $aakrepyok.'Akrep : '.$aakrep[0]=0;
+											}else return 'Düşman Akrep : '.$aakrep[0];
+											}
+											elseif($savunan=="3" and $ilkhedef=="6" and $bokcu[0]<=0) {$bokcu[0]=0; return $bokcuyokki;}
+											elseif($savunan=="3" and $ilkhedef=="6" and $aakrep[0]<=0) return savunany(3,rand(1,7));
+									if($savunan=="3" and $ilkhedef=="7" and $amancinik[0]>=1 and $bokcu[0]>=1 )   
+											{
+										$oran=0.2;
+											$kayiporani=(($birim["Amancinik"]['can'] * $amancinik[0] ) - ($birim["Bokcu"]['guc'] * $bokcu[0])*$oran) / ($birim["Amancinik"]['can']*$amancinik[0]);
+											$amancinik[0]=round($kayiporani * $amancinik[0]);
+											if($amancinik[0]<=0 and $bokcu[0]>=1)
+											{
+												return $amancinikyok.'Mancınık : '.$amancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$amancinik[0];
+											}
+											elseif($savunan=="3" and $ilkhedef=="7" and $bokcu[0]<=0) {$bokcu[0]=0; return $bokcuyokki;}
+											elseif($savunan=="3" and $ilkhedef=="7" and $amancinik[0]<=0) return savunany(3,rand(1,7));
+									if($savunan=="4" and $ilkhedef=="1" and $amusellem[0]>=1 and $byeniceri[0]>=1 )   
+											{
+										$oran=3;
+											$kayiporani=(($birim["Amusellem"]['can'] * $amusellem[0] ) - (($birim["Byeniceri"]['guc'] * $byeniceri[0])*$oran)) / ($birim["Amusellem"]['can']*$amusellem[0]);
+											$amusellem[0]=round($kayiporani * $amusellem[0]);
+											if($amusellem[0]<=0 and $byeniceri[0]>=1)
+											{
+												return $amusellemyok.'Müsellem : '.$amusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$amusellem[0];
+											}
+											elseif($savunan=="4" and $ilkhedef=="1" and $byeniceri[0]<=0) {$byeniceri[0]=0; return $byeniceriyokki;}
+											elseif($savunan=="4" and $ilkhedef=="1" and $amusellem[0]<=0) return savunany(4,rand(1,7));
+									
+									if($savunan=="4" and $ilkhedef=="2" and $asipahi[0]>=1 and $byeniceri[0]>=1 )  
+											{
+										$oran=1.5;
+											$kayiporani=(($birim["Asipahi"]['can'] * $asipahi[0] ) - ($birim["Byeniceri"]['guc'] * $byeniceri[0])*$oran) / ($birim["Asipahi"]['can']*$asipahi[0]);
+											$asipahi[0]=round($kayiporani * $asipahi[0]);
+											if($asipahi[0]<=0 and $byeniceri[0]>=1)
+											{
+												return $asipahiyok.'Sipahi : '.$asipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$asipahi[0];
+											}
+											elseif($savunan=="4" and $ilkhedef=="2" and $byeniceri[0]<=0) {$byeniceri[0]=0; return $byeniceriyokki;}
+											elseif($savunan=="4" and $ilkhedef=="2" and $asipahi[0]<=0) return savunany(4,rand(1,7));
+									
+									if($savunan=="4" and $ilkhedef=="3" and $aokcu[0]>=1 and $byeniceri[0]>=1 )  
+											{
+										$oran=1.2;
+											$kayiporani=(($birim["Aokcu"]['can'] * $aokcu[0] ) - ($birim["Byeniceri"]['guc'] * $byeniceri[0])*$oran) / ($birim["Aokcu"]['can']*$aokcu[0]);
+											$aokcu[0]=round($kayiporani * $aokcu[0]);
+											if($aokcu[0]<=0 and $byeniceri[0]>=1)
+											{
+												return $aokcuyok.'Okçu : '.$aokcu[0]=0;
+											}else return 'Düşman Okçu : '.$aokcu[0];
+											}
+											elseif($savunan=="4" and $ilkhedef=="3" and $byeniceri[0]<=0) {$byeniceri[0]=0; return $byeniceriyokki;}
+											elseif($savunan=="4" and $ilkhedef=="3" and $aokcu[0]<=0) return savunany(4,rand(1,7));
+									if($savunan=="4" and $ilkhedef=="4" and $ayeniceri[0]>=1 and $byeniceri[0]>=1 )  
+											{
+										$oran=1;
+											$kayiporani=(($birim["Ayeniceri"]['can'] * $ayeniceri[0] ) - ($birim["Byeniceri"]['guc'] * $byeniceri[0])*$oran) / ($birim["Ayeniceri"]['can']*$ayeniceri[0]);
+											$ayeniceri[0]=round($kayiporani * $ayeniceri[0]);
+											if($ayeniceri[0]<=0 and $byeniceri[0]>=1)
+											{
+												return $ayeniceriyok.'Yeniçeri : '.$ayeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$ayeniceri[0];
+											}
+											elseif($savunan=="4" and $ilkhedef=="4" and $byeniceri[0]<=0) {$byeniceri[0]=0; return $byeniceriyokki;}
+											elseif($savunan=="4" and $ilkhedef=="4" and $ayeniceri[0]<=0) return savunany(4,rand(1,7));
+									if($savunan=="4" and $ilkhedef=="5" and $aatliokcu[0]>=1 and $byeniceri[0]>=1 )  
+											{
+										$oran=0.5;
+											$kayiporani=(($birim["Aatliokcu"]['can'] * $aatliokcu[0] ) - ($birim["Byeniceri"]['guc'] * $byeniceri[0])*$oran) / ($birim["Aatliokcu"]['can']*$aatliokcu[0]);
+											$aatliokcu[0]=round($kayiporani * $aatliokcu[0]);
+											if($aatliokcu[0]<=0 and $byeniceri[0]>=1)
+											{
+												return $aatliokcuyok.'Atlı Okçu : '.$aatliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$aatliokcu[0];
+											}
+											elseif($savunan=="4" and $ilkhedef=="5" and $byeniceri[0]<=0) {$byeniceri[0]=0; return $byeniceriyokki;}
+											elseif($savunan=="4" and $ilkhedef=="5" and $aatliokcu[0]<=0) return savunany(4,rand(1,7));
+									if($savunan=="4" and $ilkhedef=="6" and $aakrep[0]>=1 and $byeniceri[0]>=1 )  
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Aakrep"]['can'] * $aakrep[0] ) - ($birim["Byeniceri"]['guc'] * $byeniceri[0])*$oran) / ($birim["Aakrep"]['can']*$aakrep[0]);
+											$aakrep[0]=round($kayiporani * $aakrep[0]);
+											if($aakrep[0]<=0 and $byeniceri[0]>=1)
+											{
+												return $aakrepyok.'Akrep : '.$aakrep[0]=0;
+											}else return 'Düşman Akrep : '.$aakrep[0];
+											}
+											elseif($savunan=="4" and $ilkhedef=="6" and $byeniceri[0]<=0) {$byeniceri[0]=0; return $byeniceriyokki;}
+											elseif($savunan=="4" and $ilkhedef=="6" and $aakrep[0]<=0) return savunany(4,rand(1,7));
+									if($savunan=="4" and $ilkhedef=="7" and $amancinik[0]>=1 and $byeniceri[0]>=1 ) 
+											{
+										$oran=0.3;
+											$kayiporani=(($birim["Amancinik"]['can'] * $amancinik[0] ) - ($birim["Byeniceri"]['guc'] * $byeniceri[0])*$oran) / ($birim["Amancinik"]['can']*$amancinik[0]);
+											$amancinik[0]=round($kayiporani * $amancinik[0]);
+											if($amancinik[0]<=0 and $byeniceri[0]>=1)
+											{
+												return $amancinikyok.'Mancınık : '.$amancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$amancinik[0];
+											}
+											elseif($savunan=="4" and $ilkhedef=="7" and $byeniceri[0]<=0) {$byeniceri[0]=0; return $byeniceriyokki;}
+											elseif($savunan=="4" and $ilkhedef=="7" and $amancinik[0]<=0) return savunany(4,rand(1,7));
+									if($savunan=="5" and $ilkhedef=="1" and $amusellem[0]>=1 and $batliokcu[0]>=1 )  
+											{
+										$oran=5;
+											$kayiporani=(($birim["Amusellem"]['can'] * $amusellem[0] ) - (($birim["Batliokcu"]['guc'] * $batliokcu[0])*$oran)) / ($birim["Amusellem"]['can']*$amusellem[0]);
+											$amusellem[0]=round($kayiporani * $amusellem[0]);
+											if($amusellem[0]<=0 and $batliokcu[0]>=1)
+											{
+												return $amusellemyok.'Müsellem : '.$amusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$amusellem[0];
+											}
+											elseif($savunan=="5" and $ilkhedef=="1" and $batliokcu[0]<=0) {$batliokcu[0]=0; return $batliokcuyokki;}
+											elseif($savunan=="5" and $ilkhedef=="1" and $amusellem[0]<=0) return savunany(5,rand(1,7));
+									
+									if($savunan=="5" and $ilkhedef=="2" and $asipahi[0]>=1 and $batliokcu[0]>=1 )  
+											{
+										$oran=4;
+											$kayiporani=(($birim["Asipahi"]['can'] * $asipahi[0] ) - ($birim["Batliokcu"]['guc'] * $batliokcu[0])*$oran) / ($birim["Asipahi"]['can']*$asipahi[0]);
+											$asipahi[0]=round($kayiporani * $asipahi[0]);
+											if($asipahi[0]<=0 and $batliokcu[0]>=1)
+											{
+												return $asipahiyok.'Sipahi : '.$asipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$asipahi[0];
+											}
+											elseif($savunan=="5" and $ilkhedef=="2" and $batliokcu[0]<=0) {$batliokcu[0]=0; return $batliokcuyokki;}
+											elseif($savunan=="5" and $ilkhedef=="2" and $asipahi[0]<=0) return savunany(5,rand(1,7));
+									
+									if($savunan=="5" and $ilkhedef=="3" and $aokcu[0]>=1 and $batliokcu[0]>=1 )  
+											{
+										$oran=3;
+											$kayiporani=(($birim["Aokcu"]['can'] * $aokcu[0] ) - ($birim["Batliokcu"]['guc'] * $batliokcu[0])*$oran) / ($birim["Aokcu"]['can']*$aokcu[0]);
+											$aokcu[0]=round($kayiporani * $aokcu[0]);
+											if($aokcu[0]<=0 and $batliokcu[0]>=1)
+											{
+												return $aokcuyok.'Okçu : '.$aokcu[0]=0;
+											}else return 'Düşman Okçu : '.$aokcu[0];
+											}
+											elseif($savunan=="5" and $ilkhedef=="3" and $batliokcu[0]<=0) {$batliokcu[0]=0; return $batliokcuyokki;}
+											elseif($savunan=="5" and $ilkhedef=="3" and $aokcu[0]<=0) return savunany(5,rand(1,7));
+									if($savunan=="5" and $ilkhedef=="4" and $ayeniceri[0]>=1 and $batliokcu[0]>=1 )  
+											{
+										$oran=2;
+											$kayiporani=(($birim["Ayeniceri"]['can'] * $ayeniceri[0] ) - ($birim["Batliokcu"]['guc'] * $batliokcu[0])*$oran) / ($birim["Ayeniceri"]['can']*$ayeniceri[0]);
+											$ayeniceri[0]=round($kayiporani * $ayeniceri[0]);
+											if($ayeniceri[0]<=0 and $batliokcu[0]>=1)
+											{
+												return $ayeniceriyok.'Yeniçeri : '.$ayeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$ayeniceri[0];
+											}
+											elseif($savunan=="5" and $ilkhedef=="4" and $batliokcu[0]<=0) {$batliokcu[0]=0; return $batliokcuyokki;}
+											elseif($savunan=="5" and $ilkhedef=="4" and $ayeniceri[0]<=0) return savunany(5,rand(1,7));
+									if($savunan=="5" and $ilkhedef=="5" and $aatliokcu[0]>=1 and $batliokcu[0]>=1 )  
+											{
+										$oran=1;
+											$kayiporani=(($birim["Aatliokcu"]['can'] * $aatliokcu[0] ) - ($birim["Batliokcu"]['guc'] * $batliokcu[0])*$oran) / ($birim["Aatliokcu"]['can']*$aatliokcu[0]);
+											$aatliokcu[0]=round($kayiporani * $aatliokcu[0]);
+											if($aatliokcu[0]<=0 and $batliokcu[0]>=1)
+											{
+												return $aatliokcuyok.'Atlı Okçu : '.$aatliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$aatliokcu[0];
+											}
+											elseif($savunan=="5" and $ilkhedef=="5" and $batliokcu[0]<=0) {$batliokcu[0]=0; return $batliokcuyokki;}
+											elseif($savunan=="5" and $ilkhedef=="5" and $aatliokcu[0]<=0) return savunany(5,rand(1,7));
+									if($savunan=="5" and $ilkhedef=="6" and $aakrep[0]>=1 and $batliokcu[0]>=1 )  
+											{
+										$oran=0.8;
+											$kayiporani=(($birim["Aakrep"]['can'] * $aakrep[0] ) - ($birim["Batliokcu"]['guc'] * $batliokcu[0])* $oran) / ($birim["Aakrep"]['can']*$aakrep[0]);
+											$aakrep[0]=round($kayiporani * $aakrep[0]);
+											if($aakrep[0]<=0 and $batliokcu[0]>=1)
+											{
+												return $aakrepyok.'Akrep : '.$aakrep[0]=0;
+											}else return 'Düşman Akrep : '.$aakrep[0];
+											}
+											elseif($savunan=="5" and $ilkhedef=="6" and $batliokcu[0]<=0) {$batliokcu[0]=0; return $batliokcuyokki;}
+											elseif($savunan=="5" and $ilkhedef=="6" and $aakrep[0]<=0) return savunany(5,rand(1,7));
+									if($savunan=="5" and $ilkhedef=="7" and $amancinik[0]>=1 and $batliokcu[0]>=1 )  
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Amancinik"]['can'] * $amancinik[0] ) - ($birim["Batliokcu"]['guc'] * $batliokcu[0])*$oran) / ($birim["Amancinik"]['can']*$amancinik[0]);
+											$amancinik[0]=round($kayiporani * $amancinik[0]);
+											if($amancinik[0]<=0 and $batliokcu[0]>=1)
+											{
+												return $amancinikyok.'Mancınık : '.$amancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$amancinik[0];
+											}
+											elseif($savunan=="5" and $ilkhedef=="7" and $batliokcu[0]<=0) {$batliokcu[0]=0; return $batliokcuyokki;}
+											elseif($savunan=="5" and $ilkhedef=="7" and $amancinik[0]<=0) return savunany(5,rand(1,7));
+									if($savunan=="6" and $ilkhedef=="1" and $amusellem[0]>=1 and $bakrep[0]>=1 )  
+											{
+										$oran=15;
+											$kayiporani=(($birim["Amusellem"]['can'] * $amusellem[0] ) - (($birim["Bakrep"]['guc'] * $bakrep[0])*$oran)) / ($birim["Amusellem"]['can']*$amusellem[0]);
+											$amusellem[0]=round($kayiporani * $amusellem[0]);
+											if($amusellem[0]<=0 and $bakrep[0]>=1)
+											{
+												return $amusellemyok.'Müsellem : '.$amusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$amusellem[0];
+											}
+											elseif($savunan=="6" and $ilkhedef=="1" and $bakrep[0]<=0) {$bakrep[0]=0; return $bakrepyokki;}
+											elseif($savunan=="6" and $ilkhedef=="1" and $amusellem[0]<=0) return savunany(6,rand(1,7));
+									
+									if($savunan=="6" and $ilkhedef=="2" and $asipahi[0]>=1 and $bakrep[0]>=1 )   
+											{
+										$oran=10;
+											$kayiporani=(($birim["Asipahi"]['can'] * $asipahi[0] ) - ($birim["Bakrep"]['guc'] * $bakrep[0])*$oran) / ($birim["Asipahi"]['can']*$asipahi[0]);
+											$asipahi[0]=round($kayiporani * $asipahi[0]);
+											if($asipahi[0]<=0 and $bakrep[0]>=1)
+											{
+												return $asipahiyok.'Sipahi : '.$asipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$asipahi[0];
+											}
+											elseif($savunan=="6" and $ilkhedef=="2" and $bakrep[0]<=0) {$bakrep[0]=0; return $bakrepyokki;}
+											elseif($savunan=="6" and $ilkhedef=="2" and $asipahi[0]<=0) return savunany(6,rand(1,7));
+									
+									if($savunan=="6" and $ilkhedef=="3" and $aokcu[0]>=1 and $bakrep[0]>=1 )   
+											{
+										$oran=5;
+											$kayiporani=(($birim["Aokcu"]['can'] * $aokcu[0] ) - ($birim["Bakrep"]['guc'] * $bakrep[0])*$oran) / ($birim["Aokcu"]['can']*$aokcu[0]);
+											$aokcu[0]=round($kayiporani * $aokcu[0]);
+											if($aokcu[0]<=0 and $bakrep[0]>=1)
+											{
+												return $aokcuyok.'Okçu : '.$aokcu[0]=0;
+											}else return 'Düşman Okçu : '.$aokcu[0];
+											}
+											elseif($savunan=="6" and $ilkhedef=="3" and $bakrep[0]<=0) {$bakrep[0]=0; return $bakrepyokki;}
+											elseif($savunan=="6" and $ilkhedef=="3" and $aokcu[0]<=0) return savunany(6,rand(1,7));
+									if($savunan=="6" and $ilkhedef=="4" and $ayeniceri[0]>=1 and $bakrep[0]>=1 )   
+											{
+										$oran=2;
+											$kayiporani=(($birim["Ayeniceri"]['can'] * $ayeniceri[0] ) - ($birim["Bakrep"]['guc'] * $bakrep[0])*$oran) / ($birim["Ayeniceri"]['can']*$ayeniceri[0]);
+											$ayeniceri[0]=round($kayiporani * $ayeniceri[0]);
+											if($ayeniceri[0]<=0 and $bakrep[0]>=1)
+											{
+												return $ayeniceriyok.'Yeniçeri : '.$ayeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$ayeniceri[0];
+											}
+											elseif($savunan=="6" and $ilkhedef=="4" and $bakrep[0]<=0) {$bakrep[0]=0; return $bakrepyokki;}
+											elseif($savunan=="6" and $ilkhedef=="4" and $ayeniceri[0]<=0) return savunany(6,rand(1,7));
+									if($savunan=="6" and $ilkhedef=="5" and $aatliokcu[0]>=1 and $bakrep[0]>=1 )   
+											{
+										$oran=1;
+											$kayiporani=(($birim["Aatliokcu"]['can'] * $aatliokcu[0] ) - ($birim["Bakrep"]['guc'] * $bakrep[0])*$oran) / ($birim["Aatliokcu"]['can']*$aatliokcu[0]);
+											//Echo '<br/>'.$kayiporani;
+											$aatliokcu[0]=round($kayiporani * $aatliokcu[0]);
+											if($aatliokcu[0]<=0 and $bakrep[0]>=1)
+											{
+												return $aatliokcuyok.'Atlı Okçu : '.$aatliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$aatliokcu[0];
+											}
+											elseif($savunan=="6" and $ilkhedef=="5" and $bakrep[0]<=0) {$bakrep[0]=0; return $bakrepyokki;}
+											elseif($savunan=="6" and $ilkhedef=="5" and $aatliokcu[0]<=0) return savunany(6,rand(1,7));
+									if($savunan=="6" and $ilkhedef=="6" and $aakrep[0]>=1 and $bakrep[0]>=1 )   
+											{
+										$oran=1;
+											$kayiporani=(($birim["Aakrep"]['can'] * $aakrep[0] ) - ($birim["Bakrep"]['guc'] * $bakrep[0])*$oran) / ($birim["Aakrep"]['can']*$aakrep[0]);
+											$aakrep[0]=round($kayiporani * $aakrep[0]);
+											if($aakrep[0]<=0 and $bakrep[0]>=1)
+											{
+												return $aakrepyok.'Akrep : '.$aakrep[0]=0;
+											}else return 'Düşman Akrep : '.$aakrep[0];
+											}
+											elseif($savunan=="6" and $ilkhedef=="6" and $bakrep[0]<=0) {$bakrep[0]=0; return $bakrepyokki;}
+											elseif($savunan=="6" and $ilkhedef=="6" and $aakrep[0]<=0) return savunany(6,rand(1,7));
+									if($savunan=="6" and $ilkhedef=="7" and $amancinik[0]>=1 and $bakrep[0]>=1 )   
+											{
+										$oran=0.4;
+											$kayiporani=(($birim["Amancinik"]['can'] * $amancinik[0] ) - ($birim["Bakrep"]['guc'] * $bakrep[0])*$oran) / ($birim["Amancinik"]['can']*$amancinik[0]);
+											$amancinik[0]=round($kayiporani * $amancinik[0]);
+											if($amancinik[0]<=0 and $bakrep[0]>=1)
+											{
+												return $amancinikyok.'Mancınık : '.$amancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$amancinik[0];
+											}
+											elseif($savunan=="6" and $ilkhedef=="7" and $bakrep[0]<=0) {$bakrep[0]=0; return $bakrepyokki;}
+											elseif($savunan=="6" and $ilkhedef=="7" and $amancinik[0]<=0) return savunany(6,rand(1,7));
+									if($savunan=="7" and $ilkhedef=="1" and $amusellem[0]>=1 and $bmancinik[0]>=1 )   
+											{
+										$oran=30;
+											$kayiporani=(($birim["Amusellem"]['can'] * $amusellem[0] ) - (($birim["Bmancinik"]['guc'] * $bmancinik[0])*$oran)) / ($birim["Amusellem"]['can']*$amusellem[0]);
+											$amusellem[0]=round($kayiporani * $amusellem[0]);
+											if($amusellem[0]<=0 and $bmancinik[0]>=1)
+											{
+												return $amusellemyok.'Müsellem : '.$amusellem[0]=0;
+											}else return 'Düşman Müsellem : '.$amusellem[0];
+											}
+											elseif($savunan=="7" and $ilkhedef=="1" and $bmancinik[0]<=0) {$bmancinik[0]=0; return $bmancinikyokki;}
+											elseif($savunan=="7" and $ilkhedef=="1" and $amusellem[0]<=0) return savunany(7,rand(1,7));
+									
+									if($savunan=="7" and $ilkhedef=="2" and $asipahi[0]>=1 and $bmancinik[0]>=1 )  
+											{
+										$oran=15;
+											$kayiporani=(($birim["Asipahi"]['can'] * $asipahi[0] ) - ($birim["Bmancinik"]['guc'] * $bmancinik[0])*$oran) / ($birim["Asipahi"]['can']*$asipahi[0]);
+											$asipahi[0]=round($kayiporani * $asipahi[0]);
+											if($asipahi[0]<=0 and $bmancinik[0]>=1)
+											{
+												return $asipahiyok.'Sipahi : '.$asipahi[0]=0;
+											}else return 'Düşman Sipahi : '.$asipahi[0];
+											}
+											elseif($savunan=="7" and $ilkhedef=="2" and $bmancinik[0]<=0) {$bmancinik[0]=0; return $bmancinikyokki;}
+											elseif($savunan=="7" and $ilkhedef=="2" and $asipahi[0]<=0) return savunany(7,rand(1,7));
+									
+									if($savunan=="7" and $ilkhedef=="3" and $aokcu[0]>=1 and $bmancinik[0]>=1 )  
+											{
+										$oran=10;
+											$kayiporani=(($birim["Aokcu"]['can'] * $aokcu[0] ) - ($birim["Amancinik"]['guc'] * $amancinik[0])*$oran) / ($birim["Bokcu"]['can']*$aokcu[0]);
+											$aokcu[0]=round($kayiporani * $aokcu[0]);
+											if($aokcu[0]<=0 and $bmancinik[0]>=1)
+											{
+												return $aokcuyok.'Okçu : '.$aokcu[0]=0;
+											}else return 'Düşman Okçu : '.$aokcu[0];
+											}
+											elseif($savunan=="7" and $ilkhedef=="4" and $bmancinik[0]<=0) {$bmancinik[0]=0; return $bmancinikyokki;}
+											elseif($savunan=="7" and $ilkhedef=="3" and $aokcu[0]<=0) return savunany(7,rand(1,7));
+									if($savunan=="7" and $ilkhedef=="4" and $ayeniceri[0]>=1 and $bmancinik[0]>=1 ) 
+											{
+										$oran=7;
+											$kayiporani=(($birim["Ayeniceri"]['can'] * $ayeniceri[0] ) - ($birim["Bmancinik"]['guc'] * $bmancinik[0])*$oran) / ($birim["Ayeniceri"]['can']*$ayeniceri[0]);
+											$ayeniceri[0]=round($kayiporani * $ayeniceri[0]);
+											if($ayeniceri[0]<=0 and $bmancinik[0]>=1)
+											{
+												return $ayeniceriyok.'Yeniçeri : '.$ayeniceri[0]=0;
+											}else return 'Düşman Yeniçeri : '.$ayeniceri[0];
+											}
+											elseif($savunan=="7" and $ilkhedef=="4" and $bmancinik[0]<=0) {$bmancinik[0]=0; return $bmancinikyokki;}
+											elseif($savunan=="7" and $ilkhedef=="4" and $ayeniceri[0]<=0) return savunany(7,rand(1,7));
+									if($savunan=="7" and $ilkhedef=="5" and $aatliokcu[0]>=1 and $bmancinik[0]>=1 )  
+											{
+										$oran=5;
+											$kayiporani=(($birim["Aatliokcu"]['can'] * $aatliokcu[0] ) - ($birim["Bmancinik"]['guc'] * $bmancinik[0])*$oran) / ($birim["Aatliokcu"]['can']*$aatliokcu[0]);
+											$aatliokcu[0]=round($kayiporani * $aatliokcu[0]);
+											if($aatliokcu[0]<=0 and $bmancinik[0]>=1)
+											{
+												return $aatliokcuyok.'Atlı Okçu : '.$aatliokcu[0]=0;
+											}else return 'Düşman Atlı Okçu : '.$aatliokcu[0];
+											}
+											elseif($savunan=="7" and $ilkhedef=="5" and $bmancinik[0]<=0) {$bmancinik[0]=0; return $bmancinikyokki;}
+											elseif($savunan=="7" and $ilkhedef=="5" and $aatliokcu[0]<=0) return savunany(7,rand(1,7));
+									if($savunan=="7" and $ilkhedef=="6" and $aakrep[0]>=1 and $bmancinik[0]>=1 )  
+											{
+										$oran=3;
+											$kayiporani=(($birim["Aakrep"]['can'] * $aakrep[0] ) - ($birim["Bmancinik"]['guc'] * $bmancinik[0])*$oran) / ($birim["Aakrep"]['can']*$aakrep[0]);
+											$aakrep[0]=round($kayiporani * $aakrep[0]);
+											if($aakrep[0]<=0 and $bmancinik[0]>=1)
+											{
+												return $aakrepyok.'Akrep : '.$aakrep[0]=0;
+											}else return 'Düşman Akrep : '.$aakrep[0];
+											}
+											elseif($savunan=="7" and $ilkhedef=="6" and $bmancinik[0]<=0) {$bmancinik[0]=0; return $bmancinikyokki;}
+											elseif($savunan=="7" and $ilkhedef=="6" and $aakrep[0]<=0) return savunany(7,rand(1,7));
+									if($savunan=="7" and $ilkhedef=="7" and $amancinik[0]>=1 and $bmancinik[0]>=1 )  
+											{
+										$oran=1;
+											$kayiporani=(($birim["Amancinik"]['can'] * $amancinik[0] ) - ($birim["Bmancinik"]['guc'] * $bmancinik[0])*$oran) / ($birim["Amancinik"]['can']*$amancinik[0]);
+											$amancinik[0]=round($kayiporani * $amancinik[0]);
+											if($amancinik[0]<=0 and $bmancinik[0]>=1)
+											{
+												return $amancinikyok.'Mancınık : '.$amancinik[0]=0;
+											}else return 'Düşman Mancınık : '.$amancinik[0];
+											}
+											elseif($savunan=="7" and $ilkhedef=="7" and $bmancinik[0]<=0) {$bmancinik[0]=0; return $bmancinikyokki;}
+											elseif($savunan=="7" and $ilkhedef=="7" and $amancinik[0]<=0) return savunany(7,rand(1,7));
+					}
+		
+		
+		function saldiranagorekimhizli($turno)
+		{
+			
+			
+			global 	$amusellem,	
+					$bmusellem,
+					$asipahi,	
+					$bsipahi,		
+					$aokcu,		
+					$bokcu,				
+					$ayeniceri,	
+					$byeniceri,
+					$aatliokcu,	
+					$batliokcu,
+					$aakrep,	
+					$bakrep,	
+					$amancinik,
+					$bmancinik,
+					$ahizlar,	
+					$bhizlar,
+					$atesettimi,
+					$hdf1,
+					$hdf2;
+			
+			for ($x = 1; $x<=$turno; $x++) 
+			
+			{
+
+			if	(	$ahizlar[0]>=$ahizlar[1] and
+					$ahizlar[0]>=$ahizlar[2] and
+					$ahizlar[0]>=$ahizlar[3] and
+					$ahizlar[0]>=$ahizlar[4] and
+					$ahizlar[0]>=$ahizlar[5] and
+					$ahizlar[0]>=$ahizlar[6] and
+					$ahizlar[0]>=$bhizlar[0] and
+					$ahizlar[0]>=$bhizlar[1] and
+					$ahizlar[0]>=$bhizlar[2] and
+					$ahizlar[0]>=$bhizlar[3] and
+					$ahizlar[0]>=$bhizlar[4] and
+					$ahizlar[0]>=$bhizlar[5] and
+					$ahizlar[0]>=$bhizlar[6] and
+					$atesettimi[0]==0
+				)
+			{
+			$birimmetin[0] = saldiranx(1,$hdf1[0]);
+			$atesettimi[0]=1;
+			$ahizlar[0]=0;
+			}
+			elseif
+				(	$ahizlar[1]>=$ahizlar[0] and
+					$ahizlar[1]>=$ahizlar[2] and
+					$ahizlar[1]>=$ahizlar[3] and
+					$ahizlar[1]>=$ahizlar[4] and
+					$ahizlar[1]>=$ahizlar[5] and
+					$ahizlar[1]>=$ahizlar[6] and
+					$ahizlar[1]>=$bhizlar[0] and
+					$ahizlar[1]>=$bhizlar[1] and
+					$ahizlar[1]>=$bhizlar[2] and
+					$ahizlar[1]>=$bhizlar[3] and
+					$ahizlar[1]>=$bhizlar[4] and
+					$ahizlar[1]>=$bhizlar[5] and
+					$ahizlar[1]>=$bhizlar[6] and
+					$atesettimi[1]==0
+				)
+			{
+			$birimmetin[1]=saldiranx(2,$hdf1[1]);
+			$atesettimi[1]=1;
+			$ahizlar[1]=0;
+			}
+			elseif
+				(	$ahizlar[2]>=$ahizlar[0] and
+					$ahizlar[2]>=$ahizlar[1] and
+					$ahizlar[2]>=$ahizlar[3] and
+					$ahizlar[2]>=$ahizlar[4] and
+					$ahizlar[2]>=$ahizlar[5] and
+					$ahizlar[2]>=$ahizlar[6] and
+					$ahizlar[2]>=$bhizlar[0] and
+					$ahizlar[2]>=$bhizlar[1] and
+					$ahizlar[2]>=$bhizlar[2] and
+					$ahizlar[2]>=$bhizlar[3] and
+					$ahizlar[2]>=$bhizlar[4] and
+					$ahizlar[2]>=$bhizlar[5] and
+					$ahizlar[2]>=$bhizlar[6]	and
+					$atesettimi[2]==0
+				)
+			{
+			$birimmetin[2] = saldiranx(3,$hdf1[2]);
+			$atesettimi[2]=1;
+			$ahizlar[2]=0;
+			}
+			elseif
+				(	$ahizlar[3]>=$ahizlar[0] and
+					$ahizlar[3]>=$ahizlar[1] and
+					$ahizlar[3]>=$ahizlar[2] and
+					$ahizlar[3]>=$ahizlar[4] and
+					$ahizlar[3]>=$ahizlar[5] and
+					$ahizlar[3]>=$ahizlar[6] and
+					$ahizlar[3]>=$bhizlar[0] and
+					$ahizlar[3]>=$bhizlar[1] and
+					$ahizlar[3]>=$bhizlar[2] and
+					$ahizlar[3]>=$bhizlar[3] and
+					$ahizlar[3]>=$bhizlar[4] and
+					$ahizlar[3]>=$bhizlar[5] and
+					$ahizlar[3]>=$bhizlar[6]	and
+					$atesettimi[3]==0
+				)
+			{
+			$birimmetin[3] =saldiranx(4,$hdf1[3]);
+			$atesettimi[3]=1;
+			$ahizlar[3]=0;
+			}
+			elseif
+				(	$ahizlar[4]>=$ahizlar[0] and
+					$ahizlar[4]>=$ahizlar[1] and
+					$ahizlar[4]>=$ahizlar[2] and
+					$ahizlar[4]>=$ahizlar[3] and
+					$ahizlar[4]>=$ahizlar[5] and
+					$ahizlar[4]>=$ahizlar[6] and
+					$ahizlar[4]>=$bhizlar[0] and
+					$ahizlar[4]>=$bhizlar[1] and
+					$ahizlar[4]>=$bhizlar[2] and
+					$ahizlar[4]>=$bhizlar[3] and
+					$ahizlar[4]>=$bhizlar[4] and
+					$ahizlar[4]>=$bhizlar[5] and
+					$ahizlar[4]>=$bhizlar[6]	and
+					$atesettimi[4]==0
+				)
+			{
+			$birimmetin[4] = saldiranx(5,$hdf1[4]);
+			$atesettimi[4]=1;
+			$ahizlar[4]=0;
+			}
+			elseif
+				(	$ahizlar[5]>=$ahizlar[0] and
+					$ahizlar[5]>=$ahizlar[1] and
+					$ahizlar[5]>=$ahizlar[2] and
+					$ahizlar[5]>=$ahizlar[3] and
+					$ahizlar[5]>=$ahizlar[4] and
+					$ahizlar[5]>=$ahizlar[6] and
+					$ahizlar[5]>=$bhizlar[0] and
+					$ahizlar[5]>=$bhizlar[1] and
+					$ahizlar[5]>=$bhizlar[2] and
+					$ahizlar[5]>=$bhizlar[3] and
+					$ahizlar[5]>=$bhizlar[4] and
+					$ahizlar[5]>=$bhizlar[5] and
+					$ahizlar[5]>=$bhizlar[6] and
+					$atesettimi[5]==0
+				)
+			{
+			$birimmetin[5] = saldiranx(6,$hdf1[5]);
+			$atesettimi[5]=1;
+			$ahizlar[5]=0;
+			}
+						elseif
+				(	$ahizlar[6]>=$ahizlar[0] and
+					$ahizlar[6]>=$ahizlar[1] and
+					$ahizlar[6]>=$ahizlar[2] and
+					$ahizlar[6]>=$ahizlar[3] and
+					$ahizlar[6]>=$ahizlar[4] and
+					$ahizlar[6]>=$ahizlar[5] and
+					$ahizlar[6]>=$bhizlar[0] and
+					$ahizlar[6]>=$bhizlar[1] and
+					$ahizlar[6]>=$bhizlar[2] and
+					$ahizlar[6]>=$bhizlar[3] and
+					$ahizlar[6]>=$bhizlar[4] and
+					$ahizlar[6]>=$bhizlar[5] and
+					$ahizlar[6]>=$bhizlar[6] and
+					$atesettimi[6]==0
+				)
+			{
+			$birimmetin[6] = saldiranx(7,$hdf1[6]);
+			$atesettimi[6]=1;
+			$ahizlar[6]=0;
+			}
+			elseif
+				(	$bhizlar[0]>=$ahizlar[0] and
+					$bhizlar[0]>=$ahizlar[1] and
+					$bhizlar[0]>=$ahizlar[2] and
+					$bhizlar[0]>=$ahizlar[3] and
+					$bhizlar[0]>=$ahizlar[4] and
+					$bhizlar[0]>=$ahizlar[5] and
+					$bhizlar[0]>=$bhizlar[6] and
+					$bhizlar[0]>=$bhizlar[1] and
+					$bhizlar[0]>=$bhizlar[2] and
+					$bhizlar[0]>=$bhizlar[3] and
+					$bhizlar[0]>=$bhizlar[4] and
+					$bhizlar[0]>=$bhizlar[5] and
+					$bhizlar[0]>=$bhizlar[6] and
+					$atesettimi[7]==0
+				)
+			{
+			$birimmetin[7] = savunany(1,$hdf2[0]);
+			$atesettimi[7]=1;
+			$bhizlar[0]=0;
+			}
+			elseif
+				(	$bhizlar[1]>=$ahizlar[0] and
+					$bhizlar[1]>=$ahizlar[1] and
+					$bhizlar[1]>=$ahizlar[2] and
+					$bhizlar[1]>=$ahizlar[3] and
+					$bhizlar[1]>=$ahizlar[4] and
+					$bhizlar[1]>=$ahizlar[5] and
+					$bhizlar[1]>=$bhizlar[6] and
+					$bhizlar[1]>=$bhizlar[0] and
+					$bhizlar[1]>=$bhizlar[2] and
+					$bhizlar[1]>=$bhizlar[3] and
+					$bhizlar[1]>=$bhizlar[4] and
+					$bhizlar[1]>=$bhizlar[5] and
+					$bhizlar[1]>=$bhizlar[6] and
+					$atesettimi[8]==0
+				)
+			{
+			$birimmetin[8] = savunany(2,$hdf2[1]);
+			$atesettimi[8]=1;
+			$bhizlar[1]=0;
+			}
+			elseif
+				(	$bhizlar[2]>=$ahizlar[0] and
+					$bhizlar[2]>=$ahizlar[1] and
+					$bhizlar[2]>=$ahizlar[2] and
+					$bhizlar[2]>=$ahizlar[3] and
+					$bhizlar[2]>=$ahizlar[4] and
+					$bhizlar[2]>=$ahizlar[5] and
+					$bhizlar[2]>=$bhizlar[6] and
+					$bhizlar[2]>=$bhizlar[0] and
+					$bhizlar[2]>=$bhizlar[1] and
+					$bhizlar[2]>=$bhizlar[3] and
+					$bhizlar[2]>=$bhizlar[4] and
+					$bhizlar[2]>=$bhizlar[5] and
+					$bhizlar[2]>=$bhizlar[6] and
+					$atesettimi[9]==0
+				)
+			{
+			$birimmetin[9] = savunany(3,$hdf2[2]);
+			$atesettimi[9]=1;
+			$bhizlar[2]=0;
+			}
+			elseif
+				(	$bhizlar[3]>=$ahizlar[0] and
+					$bhizlar[3]>=$ahizlar[1] and
+					$bhizlar[3]>=$ahizlar[2] and
+					$bhizlar[3]>=$ahizlar[3] and
+					$bhizlar[3]>=$ahizlar[4] and
+					$bhizlar[3]>=$ahizlar[5] and
+					$bhizlar[3]>=$bhizlar[6] and
+					$bhizlar[3]>=$bhizlar[1] and
+					$bhizlar[3]>=$bhizlar[2] and
+					$bhizlar[3]>=$bhizlar[0] and
+					$bhizlar[3]>=$bhizlar[4] and
+					$bhizlar[3]>=$bhizlar[5] and
+					$bhizlar[3]>=$bhizlar[6] and
+					$atesettimi[10]==0
+				)
+			{
+			$birimmetin[10] = savunany(4,$hdf2[3]);
+			$atesettimi[10]=1;
+			$bhizlar[3]=0;
+			}
+			elseif
+				(	$bhizlar[4]>=$ahizlar[0] and
+					$bhizlar[4]>=$ahizlar[1] and
+					$bhizlar[4]>=$ahizlar[2] and
+					$bhizlar[4]>=$ahizlar[3] and
+					$bhizlar[4]>=$ahizlar[4] and
+					$bhizlar[4]>=$ahizlar[5] and
+					$bhizlar[4]>=$bhizlar[6] and
+					$bhizlar[4]>=$bhizlar[1] and
+					$bhizlar[4]>=$bhizlar[2] and
+					$bhizlar[4]>=$bhizlar[3] and
+					$bhizlar[4]>=$bhizlar[0] and
+					$bhizlar[4]>=$bhizlar[5] and
+					$bhizlar[4]>=$bhizlar[6] and
+					$atesettimi[11]==0
+				)
+			{
+			$birimmetin[11] = savunany(5,$hdf2[4]);
+			$atesettimi[11]=1;
+			$bhizlar[4]=0;
+			}
+			elseif
+				(	$bhizlar[5]>=$ahizlar[0] and
+					$bhizlar[5]>=$ahizlar[1] and
+					$bhizlar[5]>=$ahizlar[2] and
+					$bhizlar[5]>=$ahizlar[3] and
+					$bhizlar[5]>=$ahizlar[4] and
+					$bhizlar[5]>=$ahizlar[5] and
+					$bhizlar[5]>=$bhizlar[6] and
+					$bhizlar[5]>=$bhizlar[1] and
+					$bhizlar[5]>=$bhizlar[2] and
+					$bhizlar[5]>=$bhizlar[3] and
+					$bhizlar[5]>=$bhizlar[4] and
+					$bhizlar[5]>=$bhizlar[0] and
+					$bhizlar[5]>=$bhizlar[6] and
+					$atesettimi[12]==0
+				)
+			{
+			$birimmetin[12] = savunany(6,$hdf2[5]);
+			$atesettimi[12]=1;
+			$bhizlar[5]=0;
+			}
+						elseif
+				(	$bhizlar[6]>=$ahizlar[0] and
+					$bhizlar[6]>=$ahizlar[1] and
+					$bhizlar[6]>=$ahizlar[2] and
+					$bhizlar[6]>=$ahizlar[3] and
+					$bhizlar[6]>=$ahizlar[4] and
+					$bhizlar[6]>=$ahizlar[5] and
+					$bhizlar[6]>=$bhizlar[6] and
+					$bhizlar[6]>=$bhizlar[1] and
+					$bhizlar[6]>=$bhizlar[2] and
+					$bhizlar[6]>=$bhizlar[3] and
+					$bhizlar[6]>=$bhizlar[4] and
+					$bhizlar[6]>=$bhizlar[5] and
+					$bhizlar[6]>=$bhizlar[0] and
+					$atesettimi[13]==0
+				)
+			{
+			$birimmetin[13] = savunany(7,$hdf2[6]);
+			$atesettimi[13]=1;
+			$bhizlar[6]=0;
+			}
+			}
+			if($atesettimi[0]==1 and $atesettimi[1]==1 and $atesettimi[2]==1 and $atesettimi[3]==1 and $atesettimi[4]==1 and $atesettimi[5]==1 and $atesettimi[6]==1 and $atesettimi[7]==1 and 
+			$atesettimi[8]==1 and $atesettimi[9]==1 and $atesettimi[10]==1 and $atesettimi[11]==1 and $atesettimi[12]==1 and $atesettimi[13]==1 )
+			{
+				Echo 'Çatışma sonlandı.<hr/>';
+				for($x=0;$x<14;$x++)
+				{
+					$atesettimi[$x]=0;
+					if($x<=6)
+							{
+								$ahizlar[$x]=$ahizlaryedek[$x];
+								$bhizlar[$x]=$bhizlaryedek[$x];
+							}
+				}
+				saldiranagorekimhizli($turno-14);
+				
+				}
+			else echo 'Savaş bitti';
+		}	
+		
+		saldiranagorekimhizli(14).'<hr>';	
+		
+}
+}
+}	
+?>
+
+
+<table id="tab1" width="100%" border="0">
+  <tr>
+    <th scope="col">Kalan Birim Adları</th>
+    <th scope="col">Kalan Birim Sayıları</th>
+    <th scope="col">Kalan Birim Sayıları</th>
+  </tr>
+  <tr>
+    <th scope="row">Müsellem</th>
+    <td><?php echo $amusellem[0]; ?></td>
+    <td><?php echo $bmusellem[0]; ?></td>
+  </tr>
+  <tr>
+    <th scope="row">Sipahi</th>
+    <td><?php echo $asipahi[0]; ?></td>
+    <td><?php echo $bsipahi[0]; ?></td>
+  </tr>
+  <tr>
+    <th scope="row">Okçu</th>
+    <td><?php echo $aokcu[0]; ?></td>
+    <td><?php echo $bokcu[0]; ?></td>
+  </tr>
+  <tr>
+    <th scope="row">Yeniçeri</th>
+    <td><?php echo $ayeniceri[0]; ?></td>
+    <td><?php echo $byeniceri[0]; ?></td>
+  </tr>
+  <tr>
+    <th scope="row">Atlı Okçu</th>
+    <td><?php echo $aatliokcu[0]; ?></td>
+    <td><?php echo $batliokcu[0]; ?></td>
+  </tr>
+  <tr>
+    <th scope="row">Akrep</th>
+    <td><?php echo $aakrep[0]; ?></td>
+    <td><?php echo $bakrep[0]; ?></td>
+  </tr>
+  <tr>
+    <th scope="row">Mancınık</th>
+    <td><?php echo $amancinik[0]; ?></td>
+    <td><?php echo $bmancinik[0]; ?></td>
+  </tr>
+</table>
+</body>
+</html>
