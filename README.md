@@ -69,6 +69,8 @@ Savaş berabere bitti.
 
 Test 1 :
 
+Proje Dosyası : <a href ="https://github.com/alperc58/SavassAlgoritmasi/blob/master/22%20%E2%80%8EEyl%C3%BCl%20%E2%80%8E2018.php.test">22 ‎Eylül ‎2018.php.test</a>
+
 22.09.2018 tarihinde amatör olarak denedim. Şimdi tekrardan göz attım fakat çok karmaşık göründü. neyi nasıl kullanmam gerektiğine karar vermeden, sonuca göre yazmıştım. 
 Sadece yazdım ve çalıştırdım. Sonunda böyle bir şey çıktı şu an bakıyorum yazdığım satırlardan fazla birşey anlamadım.
 
