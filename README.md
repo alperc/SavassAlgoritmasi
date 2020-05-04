@@ -8,5 +8,5 @@ Test 1 :
 Sadece yazdım ve çalıştırdım. Sonunda böyle bir şey çıktı şu an bakıyorum yazdığım satırlardan fazla birşey anlamadım.
 
 Ek olarak aklımda kalan şu ; 
-- bu kodlarla 1 kez similasyon yaptırabilidim. 
-- 2. denemede php ram yetersiz diye uyarıyor. :) Galiba 2. turda sonsuz döngüye giriyor. inceleyebilirsiniz.
+- Bu kodlarla 1 kez similasyondan sonuc alabilidim. 
+- Aynı sayfada 2 . denemede php ram yetersiz diye uyarıyor. :) Galiba 2. turda sonsuz döngüye giriyor. Ram şişiyor. inceleyebilirsiniz.
