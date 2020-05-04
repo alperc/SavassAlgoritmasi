@@ -1,7 +1,7 @@
 # SavassAlgoritmasi
 Oluşturulabilecek bir savaş sistemi algoritması üzerinde en sağlıklı ve kullanışlı haliyle geliştirme çalışmasıdır.
 
-######################################################################################################################
+################################################################################################
 Test 1 :
 
 22.09.2018 tarihinde amatör olarak denedim. çok karmaşık bir hal aldı. neyi nasıl kullanmam gerektiğine karar veremedim. sonuca göre yazdım. 
