@@ -1,13 +1,18 @@
 <pre>
+
 <?php
 
 session_start();
+
 ob_start();
 
 $askerler = new askerler();
 
 	class askerler
-
+	
+	/*
+		# Bu sınıf taraflara ait askerlerin verileri yer alacak. Bu veriler bir üst olacak olan savaş sistemi içinde çekilip kullanılacak.
+	*/
 	{
 
 		private $askerler = [];
@@ -16,11 +21,11 @@ $askerler = new askerler();
 
 		{
 
-		$hid;
+			$hid;
 
-		$this->askerler[$hid][] = $asker;
+			$this->askerler[$hid][] = $asker;
 
-		//$asker->setTakim($this);
+			//$asker->setTakim($this);
 
 		}
 
@@ -30,7 +35,10 @@ $askerler = new askerler();
 	/*
 	
 	# Bu sınıfta savaşta yer alan askerlerin bilgileri yer alacak örnek (sayisi,seviye,guc,hiz,can,toplamguc,toplamcan,takim vb)
+	# Bu bilgiler bir üstündeki sınıf olan $askerler içinde taraf şartına göre depolanacak. 
 	
+	->nitelik($hid,$bid) hesap ve birim bilgilerini veri tabanından alıp değikenleri doldurulduğu fonksiyon.
+
 	*/
 	{
 		
@@ -108,7 +116,7 @@ $asker2 = new asker(2,2,333);
 $asker3 = new asker(1,58,333);
 $asker4 = new asker(2,58,333);
 
-$askerler->add($asker1->hid,$asker1); // $askerler-add("askerin ait olduğu taraf","askere ait veri");
+$askerler->add($asker1->hid,$asker1); // $askerler-add("askerin ait olduğu taraf","askere ait veriler");
 $askerler->add($asker2->hid,$asker2);
 $askerler->add($asker3->hid,$asker3);
 $askerler->add($asker4->hid,$asker4);
