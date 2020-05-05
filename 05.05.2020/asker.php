@@ -11,7 +11,8 @@ $askerler = new askerler();
 	class askerler
 	
 	/*
-		# Bu sınıf taraflara ait askerlerin verileri yer alacak. Bu veriler bir üst olacak olan savaş sistemi içinde çekilip kullanılacak.
+		# Bu sınıf taraflara ait askerlerin verileri yer alacak. 
+		# Bu veriler bir üst olacak olan savaş sistemi içinde çekilip kullanılacak.
 	*/
 	{
 
