@@ -52,21 +52,38 @@ $askerler = new askerler();
 
 		private $seviyesi;
 
-		private $guc; // sistem kendi hesaplayacak. Birim güç değeri
+		private $guc; // sistem kendi hesaplayacak.
 
-		private $hiz; // sistem kendi hesaplayacak. Birim hız değeri
+		private $hiz; // sistem kendi hesaplayacak.
 
-		private $can; // sistem kendi hesaplayacak. Birim can değeri
+		private $can; // sistem kendi hesaplayacak.
 
-		private $hedef;
+		private $otoveri; // otomatik veri doldurma  sistemi aktifse (true) verileri sql'den çeker. ona göre hedefler.
+				# bunun kullanılma sebebi savunan ve ya saldıran tarafın hedef ve hız bilgilerini elle girilmesini sağlamaktır.
+		private $hedef; // otomatik veri doldurma sistemi (false) kapalıysa hedefi kendin girersin.
 
-		function __construct($bid=null,$hid=null,$sayisi=null)
+
+		function __construct($bid=null,$hid=null,$sayisi=null,$otoveri=true,$hedef=null,$seviye=null)
 
 		{
 
+			$this->otoveri = $otoveri;
+
+			if($otoveri==false)
+				
+				$this->hedef = $hedef;
+			
 			$this->bid = $bid;
-	
+			
 			$this->hid = $hid;
+
+			if($hid=="tatbikat")
+
+			{
+
+				$this->seviyesi = $seviye;
+
+			}
 	
 			$this->sayisi = $sayisi;
 			
@@ -89,13 +106,19 @@ $askerler = new askerler();
 			$Birim = New Birim;
 			
 			$varsayilan = ($Birim->vbirimcek($bid));
-		
-			$birimseviye = $Birim->birimseviyecek($hid);
+			
+			$birimseviye = $Birim->birimseviyecek($hid); # veritabanında birim seviyelerin çeker.
 
-			$this->seviyesi = $birimseviye[0][$bid];
+			if($this->otoveri==true)
 
-			$this->hedef = $Birim->birimhedefcek($hid)[$bid];
-		
+			{
+
+				$this->seviyesi = $birimseviye[0][$bid];
+
+				$this->hedef = $Birim->birimhedefcek($hid)[$bid]; # veritabanında hedefleri çeker.
+			
+			}
+				
 			$this->guc = $varsayilan[vb_guc] + floor($birimseviye[0][$bid]*($varsayilan[vb_guc]/5));
 			
 			$this->can = $varsayilan[vb_can] + floor($birimseviye[0][$bid]*($varsayilan[vb_can]/5));
@@ -110,11 +133,11 @@ $askerler = new askerler();
 
 	}
 
-$asker1 = new asker(1,2,333); // asker( "birim türü/cinsi","takim id","birim sayısı")
-$asker2 = new asker(2,2,333); 
+$asker1 = new asker(1,2,333,true); // asker( "birim türü/cinsi","takim id","birim sayısı","veritabanindan verileri cek")
+$asker2 = new asker(2,2,333,true); 
 
-$asker3 = new asker(1,58,333);
-$asker4 = new asker(2,58,333);
+$asker3 = new asker(1,58,333,false,1,4); // asker( "birim türü/cinsi","takim id","birim sayısı","verileri cekme","hedef","seviye")
+$asker4 = new asker(2,58,333,false,2,4);
 
 $askerler->add($asker1->hid,$asker1); // $askerler-add("askerin ait olduğu taraf","askere ait veriler");
 $askerler->add($asker2->hid,$asker2);
