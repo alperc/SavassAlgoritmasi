@@ -23,7 +23,7 @@ $ordular = new ordular();
 
 		private $tarafBilgisi = [];
 
-		private $saldiriSirasi; 		# bu degiskende savaştaki saldırı sırası yer alacak.
+		//şu an için gerek kalmadı. private $saldiriSirasi; 		# bu degiskende savaştaki saldırı sırası yer alacak. 
 
 		private $torduBilgisi;			# toplam ordu güç verisi yazar.
 
