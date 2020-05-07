@@ -7,25 +7,25 @@ Saldıran ülkesi ile Savunan ülkesi arasında çatışma senaryosunu hesaplaya
 
 # Demo URL : <a href ="http://fetih.online/savas/index.php"> 22.09.2018 </a>
 # Birimler(8 çeşit) : 
-  A, B, C, D, E, F, G, H
+##  A, B, C, D, E, F, G, H
 
 # Birim Özellikleri : 
 
-Can : 5 , 6 , 8 , 10 , 20 , 15 , 10 , 10
+## Can : 5 , 6 , 8 , 10 , 20 , 15 , 10 , 10
 
-Güç : 1 , 2 , 3 , 4 , 10 , 10 , 15 , 30
+## Güç : 1 , 2 , 3 , 4 , 10 , 10 , 15 , 30
 
-Hız : 2 , 3 , 4 , 2 , 3 , 5 , 2 , 1
+## Hız : 2 , 3 , 4 , 2 , 3 , 5 , 2 , 1
 
-Menzil : (Bu etken şu an için kullanılmamakta).
+## Menzil : (Bu etken şu an için kullanılmamakta).
 
 
 # Birim Hedef Özelliği : 
 
 Savaş başlamadan önce askerlerin hangi düşman birimine saldıracağı belirlenebilir. Örnek;
-A -> A
+## A -> A
 
-B -> A
+## B -> A
 
 C -> F
 
