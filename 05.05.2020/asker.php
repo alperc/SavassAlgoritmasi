@@ -3,7 +3,8 @@
 	class asker
 	/*
 	
-		# Bu sınıfta savaşta yer alan askerlerin bilgileri yer alacak örnek (sayisi,seviye,guc,hiz,can,toplamguc,toplamcan,takim vb)
+		# Bu sınıfta savaşta yer alan askerlerin bilgileri yer alacak örnek (sayisi,seviye,guc,hiz,can,toplamguc,
+		toplamcan,takim vb)
 	
 	*/
 	{
@@ -29,7 +30,8 @@
 		private $tcan; // sistem kendi hesaplayacak.
 
 		private $otoveri; // otomatik veri doldurma  sistemi aktifse (true) verileri sql'den çeker. ona göre hedefler.
-				# bunun kullanılma sebebi savunan ve ya saldıran tarafın hedef ve hız bilgilerini elle girilmesini sağlamaktır.
+				# bunun kullanılma sebebi savunan ve ya saldıran tarafın hedef ve hız bilgilerini elle girilmesini 
+				# sağlamaktır.
 		private $hedef; // otomatik veri doldurma sistemi (false) kapalıysa hedefi kendin girersin.
 
 		private $asker = []; # asker verisin array halince çıktısıdır.
@@ -136,8 +138,7 @@
 		public function veri()
 
 		{
-
-
+	
 			return $this->asker[0];
 
 		}
