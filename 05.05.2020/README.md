@@ -1,11 +1,6 @@
-2'e ait Müsellem saldırıyor. Hedef : 1. 
+Ekran Görüntüsü ;
 
-tatbikat'e ait Müsellem saldırıyor. Hedef : 4. 
-
-2'e ait Sipahi saldırıyor. Hedef : 2. 
-
-tatbikat'e ait Sipahi saldırıyor. Hedef : 4. 
-
+![Image description](https://prntscr.com/scsm9n)
 savas Object
 (
     [askerler] => Array
