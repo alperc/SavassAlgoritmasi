@@ -1,8 +1,4 @@
-<style>
-body {
-  background-color: coral;
-}
-</style>
+<div>testttt </div>
 
 # Savaş Algoritmasi
 
