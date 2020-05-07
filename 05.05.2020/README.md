@@ -1,129 +1,131 @@
 # Çıktı :
-<pre>
-ordular Object
-(
-    [askerler:ordular:private] => Array
-        (
-            [0] => Array
-                (
-                    [hid] => 2
-                    [bid] => 1
-                    [adi] => Müsellem
-                    [sayisi] => 333
-                    [seviyesi] => 50
-                    [guc] => 11
-                    [hiz] => 22
-                    [can] => 55
-                    [tcan] => 18315
-                    [tguc] => 3663
-                    [hedef] => 1
-                )
-
-            [1] => Array
-                (
-                    [hid] => 2
-                    [bid] => 2
-                    [adi] => Sipahi
-                    [sayisi] => 333
-                    [seviyesi] => 2
-                    [guc] => 2
-                    [hiz] => 4
-                    [can] => 8
-                    [tcan] => 2664
-                    [tguc] => 666
-                    [hedef] => 2
-                )
-
-            [2] => Array
-                (
-                    [hid] => tatbikat
-                    [bid] => 1
-                    [adi] => Müsellem
-                    [sayisi] => 333
-                    [seviyesi] => 50
-                    [guc] => 11
-                    [hiz] => 22
-                    [can] => 55
-                    [tcan] => 18315
-                    [tguc] => 3663
-                    [hedef] => 4
-                )
-
-            [3] => Array
-                (
-                    [hid] => tatbikat
-                    [bid] => 2
-                    [adi] => Sipahi
-                    [sayisi] => 333
-                    [seviyesi] => 1
-                    [guc] => 2
-                    [hiz] => 3
-                    [can] => 7
-                    [tcan] => 2331
-                    [tguc] => 666
-                    [hedef] => 4
-                )
-
-        )
-
-    [orduaskerTurSayisi:ordular:private] => 
-    [orduBilgisi:ordular:private] => Array
-        (
-            [0] => Array
-                (
-                    [taraf] => 2
-                    [asker_turu] => 1
-                    [asker_sayisi] => 333
-                )
-
-            [1] => Array
-                (
-                    [taraf] => 2
-                    [asker_turu] => 2
-                    [asker_sayisi] => 333
-                )
-
-            [2] => Array
-                (
-                    [taraf] => tatbikat
-                    [asker_turu] => 1
-                    [asker_sayisi] => 333
-                )
-
-            [3] => Array
-                (
-                    [taraf] => tatbikat
-                    [asker_turu] => 2
-                    [asker_sayisi] => 333
-                )
-
-        )
-
-    [tarafBilgisi:ordular:private] => Array
-        (
-            [0] => 2
-            [1] => tatbikat
-        )
-
-    [saldiriSirasi:ordular:private] => 
-    [torduBilgisi:ordular:private] => Array
-        (
-            [2] => Array
-                (
-                    [sayisi] => 666
-                    [tcan] => 20979
-                    [tguc] => 4329
-                )
-
-            [tatbikat] => Array
-                (
-                    [sayisi] => 666
-                    [tcan] => 20646
-                    [tguc] => 4329
-                )
-
-        )
-
-    [askeryuklemebittiMi] => 1
-)
-</pre>
+2'e ait Müsellem saldırıyor. Hedef : 1. 
+tatbikat'e ait Müsellem saldırıyor. Hedef : 4. 
+2'e ait Sipahi saldırıyor. Hedef : 2. 
+tatbikat'e ait Sipahi saldırıyor. Hedef : 4. 
+object(savas)#15 (5) {
+  ["askerler"]=>
+  array(4) {
+    [0]=>
+    array(12) {
+      ["hid"]=>
+      string(1) "2"
+      ["bid"]=>
+      int(1)
+      ["adi"]=>
+      string(9) "Müsellem"
+      ["sayisi"]=>
+      int(333)
+      ["seviyesi"]=>
+      string(2) "50"
+      ["guc"]=>
+      float(11)
+      ["hiz"]=>
+      float(22)
+      ["can"]=>
+      float(55)
+      ["tcan"]=>
+      float(18315)
+      ["tguc"]=>
+      float(3663)
+      ["tcanguc"]=>
+      float(21978)
+      ["hedef"]=>
+      string(1) "1"
+    }
+    [2]=>
+    array(12) {
+      ["hid"]=>
+      string(8) "tatbikat"
+      ["bid"]=>
+      int(1)
+      ["adi"]=>
+      string(9) "Müsellem"
+      ["sayisi"]=>
+      int(333)
+      ["seviyesi"]=>
+      int(50)
+      ["guc"]=>
+      float(11)
+      ["hiz"]=>
+      float(22)
+      ["can"]=>
+      float(55)
+      ["tcan"]=>
+      float(18315)
+      ["tguc"]=>
+      float(3663)
+      ["tcanguc"]=>
+      float(21978)
+      ["hedef"]=>
+      int(4)
+    }
+    [1]=>
+    array(12) {
+      ["hid"]=>
+      string(1) "2"
+      ["bid"]=>
+      int(2)
+      ["adi"]=>
+      string(6) "Sipahi"
+      ["sayisi"]=>
+      int(333)
+      ["seviyesi"]=>
+      string(1) "2"
+      ["guc"]=>
+      float(2)
+      ["hiz"]=>
+      float(4)
+      ["can"]=>
+      float(8)
+      ["tcan"]=>
+      float(2664)
+      ["tguc"]=>
+      float(666)
+      ["tcanguc"]=>
+      float(3330)
+      ["hedef"]=>
+      string(1) "2"
+    }
+    [3]=>
+    array(12) {
+      ["hid"]=>
+      string(8) "tatbikat"
+      ["bid"]=>
+      int(2)
+      ["adi"]=>
+      string(6) "Sipahi"
+      ["sayisi"]=>
+      int(333)
+      ["seviyesi"]=>
+      int(1)
+      ["guc"]=>
+      float(2)
+      ["hiz"]=>
+      float(3)
+      ["can"]=>
+      float(7)
+      ["tcan"]=>
+      float(2331)
+      ["tguc"]=>
+      float(666)
+      ["tcanguc"]=>
+      float(2997)
+      ["hedef"]=>
+      int(4)
+    }
+  }
+  ["tarafBilgisi"]=>
+  array(2) {
+    [0]=>
+    string(1) "2"
+    [1]=>
+    string(8) "tatbikat"
+  }
+  ["torduBilgisi":"ordular":private]=>
+  NULL
+  ["askeryuklemebittiMi"]=>
+  NULL
+  ["saldiriSirasi"]=>
+  NULL
+}
