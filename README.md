@@ -1,4 +1,4 @@
-<div style ="background-color:red;">testttt </div>
+<div style ="position:static;">testttt </div>
 
 # Savaş Algoritmasi
 
