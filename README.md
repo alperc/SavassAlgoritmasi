@@ -2,7 +2,7 @@
 
 Oluşturulabilecek bir savaş sistemi algoritması üzerinde en sağlıklı ve kullanışlı haliyle geliştirme çalışmasıdır.
 
-# Proje Klasörü : <a href ="https://github.com/alperc58/SavassAlgoritmasi/tree/master/05.05.2020"> 05.05.2020 </a>
+# Geliştirilen Proje Klasörü : <a href ="https://github.com/alperc58/SavassAlgoritmasi/tree/master/05.05.2020"> 05.05.2020 </a>
 
 #### Demo URL(Eski) : <a href ="http://fetih.online/savas/index.php"> 22.09.2018 </a>
 
@@ -44,14 +44,14 @@ gibi, bu durumda düşmanlara saldırırlar. eğer hedef tür yoksa rastgele bir
 
 1-) Birim hızı yüksek olan birim düşmana önce saldırır. Örnek verecek olursak;
 
- A(1.sinif_asker) = 10 hız , A(2.sinif_asker) = 5 hız.
+#### A(1.sinif_asker) = 10 hız , A(2.sinif_asker) = 5 hız.
  
- B(1.sinif_asker) = 8 hız , B(2.sinif_asker) = 6 hız.
+#### B(1.sinif_asker) = 8 hız , B(2.sinif_asker) = 6 hız.
  
 
 Bu senaryoda saldırı şekli ;  
 
-### A(1.sinif_asker) > B(1.sinif_asker) > B(2.sinif_asker) > A(2.sinif_asker) 
+#### A(1.sinif_asker) > B(1.sinif_asker) > B(2.sinif_asker) > A(2.sinif_asker) 
 
 şeklinde olacaktır.
 
@@ -65,11 +65,11 @@ Bu senaryoda saldırı şekli ;
 
 Olası Savaş Sonuçları : 
 
-### A ülkesi kazandı. 
+#### A ülkesi kazandı. 
 
-### B ülkesi kazandı. 
+#### B ülkesi kazandı. 
 
-### Savaş berabere bitti.
+#### Savaş berabere bitti.
 
 ################################################################################################
 
