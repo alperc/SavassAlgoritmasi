@@ -1,4 +1,9 @@
-.bg-gray-dark
+<style>
+body {
+  background-color: coral;
+}
+</style>
+
 # Savaş Algoritmasi
 
 Oluşturulabilecek bir savaş sistemi algoritması üzerinde en sağlıklı ve kullanışlı haliyle geliştirme çalışmasıdır.
