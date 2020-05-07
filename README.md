@@ -1,5 +1,3 @@
-<div style ="color:red;">testttt </div>
-
 # Savaş Algoritmasi
 
 Oluşturulabilecek bir savaş sistemi algoritması üzerinde en sağlıklı ve kullanışlı haliyle geliştirme çalışmasıdır.
