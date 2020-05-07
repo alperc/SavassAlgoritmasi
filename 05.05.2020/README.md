@@ -1,7 +1,11 @@
 2'e ait Müsellem saldırıyor. Hedef : 1. 
+
 tatbikat'e ait Müsellem saldırıyor. Hedef : 4. 
+
 2'e ait Sipahi saldırıyor. Hedef : 2. 
+
 tatbikat'e ait Sipahi saldırıyor. Hedef : 4. 
+
 savas Object
 (
     [askerler] => Array
