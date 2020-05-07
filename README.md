@@ -1,3 +1,4 @@
+.bg-gray-dark
 # Savaş Algoritmasi
 
 Oluşturulabilecek bir savaş sistemi algoritması üzerinde en sağlıklı ve kullanışlı haliyle geliştirme çalışmasıdır.
@@ -24,10 +25,10 @@ Oluşturulabilecek bir savaş sistemi algoritması üzerinde en sağlıklı ve k
 
 ## Menzil : (Bu etken şu an için kullanılmamakta).
 
-
 # Birim Hedef Özelliği : 
 
 Savaş başlamadan önce askerlerin hangi düşman birimine saldıracağı belirlenebilir. Örnek;
+
 ### A -> A
 
 ### B -> A
