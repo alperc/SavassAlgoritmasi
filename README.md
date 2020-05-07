@@ -7,13 +7,13 @@ Saldıran ülkesi ile Savunan ülkesi arasında çatışma senaryosunu hesaplaya
 
 # Demo URL : <a href ="http://fetih.online/savas/index.php"> 22.09.2018 </a>
 # Birimler(8 çeşit) : 
-##  A, B, C, D, E, F, G, H
+###  A, B, C, D, E, F, G, H
 
 # Birim Özellikleri : 
 
-## Can : 5 , 6 , 8 , 10 , 20 , 15 , 10 , 10
+### Can : 5 , 6 , 8 , 10 , 20 , 15 , 10 , 10
 
-## Güç : 1 , 2 , 3 , 4 , 10 , 10 , 15 , 30
+### Güç : 1 , 2 , 3 , 4 , 10 , 10 , 15 , 30
 
 ## Hız : 2 , 3 , 4 , 2 , 3 , 5 , 2 , 1
 
@@ -23,15 +23,15 @@ Saldıran ülkesi ile Savunan ülkesi arasında çatışma senaryosunu hesaplaya
 # Birim Hedef Özelliği : 
 
 Savaş başlamadan önce askerlerin hangi düşman birimine saldıracağı belirlenebilir. Örnek;
-## A -> A
+### A -> A
 
-## B -> A
+### B -> A
 
-C -> F
+### C -> F
 
-F -> H
+### F -> H
 
-H -> C
+### H -> C
 
 gibi, bu durumda düşmanlara saldırırlar. eğer hedef tür yoksa rastgele bir düşman hedefine saldırırlar.
 
@@ -46,7 +46,7 @@ gibi, bu durumda düşmanlara saldırırlar. eğer hedef tür yoksa rastgele bir
 
 Bu senaryoda saldırı şekli ;  
 
-A(1.sinif_asker) > B(1.sinif_asker) > B(2.sinif_asker) > A(2.sinif_asker) 
+### A(1.sinif_asker) > B(1.sinif_asker) > B(2.sinif_asker) > A(2.sinif_asker) 
 
 şeklinde olacaktır.
 
@@ -60,11 +60,11 @@ A(1.sinif_asker) > B(1.sinif_asker) > B(2.sinif_asker) > A(2.sinif_asker)
 
 Olası Savaş Sonuçları : 
 
-A ülkesi kazandı. 
+### A ülkesi kazandı. 
 
-B ülkesi kazandı. 
+### B ülkesi kazandı. 
 
-Savaş berabere bitti.
+### Savaş berabere bitti.
 
 ################################################################################################
 
