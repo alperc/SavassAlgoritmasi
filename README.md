@@ -1,12 +1,17 @@
 # Savaş Algoritmasi
+
 Oluşturulabilecek bir savaş sistemi algoritması üzerinde en sağlıklı ve kullanışlı haliyle geliştirme çalışmasıdır.
 
 Olası Savaş Kuralları;
 
 Saldıran ülkesi ile Savunan ülkesi arasında çatışma senaryosunu hesaplayacak ve sonucu bize gösterecek.
 
-# Demo URL : <a href ="http://fetih.online/savas/index.php"> 22.09.2018 </a>
+# Proje Klasörü : <a href ="https://github.com/alperc58/SavassAlgoritmasi/tree/master/05.05.2020"> 05.05.2020 </a>
+
+# Demo URL(Eski) : <a href ="http://fetih.online/savas/index.php"> 22.09.2018 </a>
+
 # Birimler(8 çeşit) : 
+
 ###  A, B, C, D, E, F, G, H
 
 # Birim Özellikleri : 
