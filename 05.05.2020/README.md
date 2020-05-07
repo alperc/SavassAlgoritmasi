@@ -2,10 +2,15 @@ Ekran Görüntüsü ;
 
 ![Image description](http://fetih.online/savas/git/07.05.2020.png)
 savas Object
+
 (
+
     [savasTurSayisi:savas:private] => 3
+    
     [askerler] => Array
+    
         (
+        
             [0] => Array
                 (
                     [hid] => 2
