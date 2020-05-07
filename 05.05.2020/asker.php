@@ -70,13 +70,13 @@
 
 		}
 
-		public function nitelik($hid,$bid)
+		public function nitelik($hid,$bid) # bu method iyileştirilecek.
 		
 		{
 			
 			$Birim = New Birim;
 			
-			$varsayilan = ($Birim->vbirimcek($bid)); // Burda sql baglantısı ile o birime ait verileri alıyorum.
+			$varsayilan = ($Birim->vbirimcek($bid));
 			
 			if($this->otoveri==true)
 
@@ -90,11 +90,11 @@
 			
 			}
 				
-			$this->guc = $varsayilan[vb_guc] + floor($this->seviyesi*($varsayilan[vb_guc]/5));
+			$this->guc = $varsayilan[vb_guc] + $this->seviyesi;//floor($this->seviyesi*($varsayilan[vb_guc]/5));
 			
-			$this->can = $varsayilan[vb_can] + floor($this->seviyesi*($varsayilan[vb_can]/5));
+			$this->can = $varsayilan[vb_can] + $this->seviyesi;//floor($this->seviyesi*($varsayilan[vb_can]/5));
 			
-			$this->hiz = $varsayilan[vb_hiz] + floor(($this->seviyesi)*($varsayilan[vb_hiz]/5));
+			$this->hiz = $varsayilan[vb_hiz] + $this->seviyesi;//floor(($this->seviyesi)*($varsayilan[vb_hiz]/5));
 			
 			$this->adi = $Birim->birimisim($bid);
 
@@ -102,7 +102,7 @@
 
 			$this->tguc = $this->guc * $this->sayisi;
 
-			$this->add(); 
+			$this->add();
 
 			return;
 
@@ -124,7 +124,8 @@
 				"can" => $this->can,
 				"tcan" => $this->tcan,
 				"tguc" => $this->tguc,
-				"hedef" => $this->hedef,
+				"tcanguc" => $this->tguc + $this->tcan,
+				"hedef" => $this->hedef
 			 );
 
 			//$asker->setTakim($this);
