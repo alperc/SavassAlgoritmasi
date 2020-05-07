@@ -1,22 +1,23 @@
 <pre>
 <?php
 
-$asker1 = new asker(1,A,333,true); // A takımı 1. tip asker // True ise sql den tamamlayacak.
-$asker2 = new asker(2,A,333,true); // A takımı 2. tip asker
+$asker1 = new asker(1,Alper,333,false,2,50); // (Asker Türü	, Kime Ait 	, Sayısı 	, Sql Durumu 	, Saldıracağı Hedef 	, Seviyesi)
+$asker2 = new asker(2,Alper,333,false,2,50); // (Alper 		, Sipahi 	, 333		, false		, 2(Musellem)		, 50)
 
-$asker3 = new asker(1,B,333,false,4,50); // B takımı 1. tip asker
-$asker4 = new asker(2,B,333,false,4,1); // B takımı 2. tip asker
+$asker3 = new asker(1,Çağlar,333,false,1,50); // Çağlar -> Musellem
+$asker4 = new asker(2,Çağlar,333,false,1,0); // Çağlar -> Sipahi
 
-$Ordular 	->add($asker1->hid,$asker1->veri()) // birim cinsi-id ve verisini gönderiyoruz.
+$Ordular 	->add($asker1->hid,$asker1->veri())
  		->add($asker2->hid,$asker2->veri())
 
 		->add($asker3->hid,$asker3->veri())
 		->add($asker4->hid,$asker4->veri())
-		->end(); // End ile asker girdisini bitirip askerlerin toplan güç ve can gibi degelerini hesaplattırıyorum.
+		->end();
 
 $Savas->bilgiler($Ordular->tarafBilgisi,$Ordular->askerler,$Ordular->saldiriSirasi);
 
-$Savas->baslat();
+$Savas 	->tur(3)
+	->baslat();
 
 var_dump($Savas);
 
