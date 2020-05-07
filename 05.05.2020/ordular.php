@@ -13,12 +13,13 @@
 
 		public $tarafBilgisi = []; 	# savascak tarafların anahtar kelimelerin yer aldığı sınıf.
 
-		//tek değişkende tutuldugunda boşa çıktı. public $saldiriSirasi; 		# bu degiskende savaştaki saldırı sırası yer alacak.
+		//tek değişkende tutuldugunda boşa çıktı. 
+		//public $saldiriSirasi; 		# bu degiskende savaştaki saldırı sırası yer alacak.
 
 		private $torduBilgisi;			# toplam ordu güç verisi yazar.
 
-		public $askeryuklemebittiMi; 	# asker yukleme islemi bittiğinde true değerini alacak ve 
-										# ilksaldiracak ve savas sirasını belirleyecek.
+		public $askeryuklemebittiMi; 		# asker yukleme islemi bittiğinde true değerini alacak ve 
+							# ilksaldiracak ve savas sirasını belirleyecek.
 
 		public function tveri()
 		
