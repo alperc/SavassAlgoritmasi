@@ -1,13 +1,17 @@
 <?php
 
 /**
- *  Savaş sınıfıdır.
+ *     Savaş sınıfıdır. Bu sınıf içinde önceden belirlenen asker ve askerlerin aralarındaki savaş süreci gerçekleştirilecek.
+ *     Miras alınan ordular sınıfı içinde savaş dışı ordu oluşturma , silme , birleştire , seçme , görev yaptırma ve ya iptal etme gibi
+ *  alt işlemleri yer almaktadır.  
  */
 class savas extends ordular
 
 {
 
-	public function bilgiler($tarafbilgisi=null,$askerler=null,$saldirisirasi=null) // bilgileri al.
+	private $savasTurSayisi = 1; // Savaşın kaç tur tekrarlayacağını belirler.
+
+	public function bilgiler($tarafbilgisi=null,$askerler=null,$saldirisirasi=null)
 	
 	{
 
@@ -19,21 +23,107 @@ class savas extends ordular
 
 	}
 
-	public function baslat() // savaşı başlat.
+	public function tur($tursayisi=null)
 	
 	{
 
-		$Taraflar = $this->siraliveri();
+		$this->savasTurSayisi = $tursayisi;
+		
+		return $this;
+	
+	}
 
-		foreach ($Taraflar as $key => $taraf) 
+	public function baslat()
+	
+	{
+
+		$askerler = $this->siraliveri(); // burda sıralı verileri çekiyoruz.
 		
-		{
+		for ($tur=1; $tur <= $this->savasTurSayisi; $tur++) 
 		
-			echo $taraf[hid]."'e ait ".$taraf[adi]. " saldırıyor. ". "Hedef : ". $taraf[hedef].". <hr>";
-			# burada savaş fonksiyonu çalışacak.
+		{ 
+			
+			echo " $tur. Tur Başlangıcı. <hr>"; // kontrol için ekran görüntüsü.
+			
+			foreach ($askerler as $key => $asker) 
+			
+			{
+	
+				echo $asker[hid]."'in &#9;".$asker[adi]. "  &#9;saldırıyor."."&#9;Durum : "; # // kontrol için ekran görüntüsü.	
+				
+				echo $savassonu = $this->catisma($asker).". <br>"  ; // kontrol için ekran görüntüsü.
+				
+				# burada savaş fonksiyonu çalışacak.
+	
+			}
+			
+			echo "<hr> $tur. Tur sonu.<hr>"; // kontrol için ekran görüntüsü.
+
 		}
 
 	}
+
+	public function catisma($taraf=null) // savaş işlemi burda gerçekleşecek.
+
+	{
+
+	  	
+		$hedef = $this->hedefkontrol($taraf[hid],$taraf[hedef],$this->askerler); // Seçilen birimin hedefindeki birimi tespit ediyoruz.
+		  		
+		if(isset($hedef) and $taraf!=null)
+
+		{
+
+		  	if($hedef[hedef] != $asker[bid] and $hedef[hid] != $asker[hid]) // Seçilen hedef askerin hedefindeyse
+		    	
+		    	{
+		  			
+		  		return $hedef[hid]."'e ait &#9;".$hedef[adi]."  &#9;ile çatışmaya girdi"; // catisma olsun. #burdakladim
+		  		
+		  	}
+
+		}
+
+		else
+		
+		{
+		  	
+		  	$yenihedef = $this->hedefolustur($asker[hid],$this->askerler);
+	  		
+		  	return $hedef = $this->hedefkontrol($asker[hid],$yenihedef,$this->askerler);
+		
+		}	
+			
+	}
+
+	public function hedefolustur($taraf='',$askerler=null) // burada rastgele yeni bir hedef belirlenecek.
+
+	{
+
+		return "Hedef bulunamadı. Yeni hedef belirlenecek" ;	
+
+	}
+
+	public function hedefkontrol($said /* saldiran takım id */,$sabid /* savunan birim id */, $askerler=[])
+	
+	{
+
+		foreach ($askerler as $key => $asker) 
+
+		{
+			
+			if($said != $asker[hid] and $sabid == $asker[bid]) // Seçilen birimin hedefindeki birimi tespit ediyoruz.
+		    	
+		   	{
+					
+				return $asker;
+
+			}
+
+		}
+		
+	}
+
 }
 
 ?>
