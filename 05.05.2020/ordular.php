@@ -1,129 +1,129 @@
-<?php
-
-/**
- *     Savaş sınıfıdır. Bu sınıf içinde önceden belirlenen asker ve askerlerin aralarındaki savaş süreci gerçekleştirilecek.
- *     Miras alınan ordular sınıfı içinde savaş dışı ordu oluşturma , silme , birleştire , seçme , görev yaptırma ve ya iptal etme gibi
- *  alt işlemleri yer almaktadır.  
- */
-class savas extends ordular
-
-{
-
-	private $savasTurSayisi = 1; // Savaşın kaç tur tekrarlayacağını belirler.
-
-	public function bilgiler($tarafbilgisi=null,$askerler=null,$saldirisirasi=null)
+	<?php
 	
+	class ordular
+
+	/*
+		# Bu sınıfta askerler adı altında ki taraflarin verileri tutulacak.
+		# Amaç ordular hakkında bilgilerin düzenli olarak tutulması. ve savaşa hazırlanması.
+	*/
+
 	{
 
-		$this->tarafBilgisi = $tarafbilgisi;
+		public $askerler = []; 		# savasta ve ya tatbikatta yer alacak askerleri tutar.
 
-		$this->askerler = $askerler;
+		public $tarafBilgisi = []; 	# savascak tarafların anahtar kelimelerin yer aldığı sınıf.
 
-		$this->saldiriSirasi = $saldirisirasi;
+		//tek değişkende tutuldugunda boşa çıktı. public $saldiriSirasi; 		# bu degiskende savaştaki saldırı sırası yer alacak.
 
-	}
+		private $torduBilgisi;			# toplam ordu güç verisi yazar.
 
-	public function tur($tursayisi=null)
-	
-	{
+		public $askeryuklemebittiMi; 	# asker yukleme islemi bittiğinde true değerini alacak ve 
+										# ilksaldiracak ve savas sirasını belirleyecek.
 
-		$this->savasTurSayisi = $tursayisi;
+		public function tveri()
 		
-		return $this;
-	
-	}
-
-	public function baslat()
-	
-	{
-
-		$askerler = $this->siraliveri(); // burda sıralı verileri çekiyoruz.
+		{
 		
-		for ($tur=1; $tur <= $this->savasTurSayisi; $tur++) 
+			return $this->ToplamAskerSay;
 		
-		{ 
-			
-			echo " $tur. Tur Başlangıcı. <hr>"; // kontrol için ekran görüntüsü.
-			
-			foreach ($askerler as $key => $asker) 
-			
+		}
+		
+		public function add($hid=null,$asker)
+
+		{
+
+			$this->askerler[] = $asker;
+
+			if ( !in_array($hid, $this->tarafBilgisi) ) 
+	
 			{
-	
-				echo $asker[hid]."'in &#9;".$asker[adi]. "  &#9;saldırıyor."."&#9;Durum : "; # // kontrol için ekran görüntüsü.	
-				
-				echo $savassonu = $this->catisma($asker).". <br>"  ; // kontrol için ekran görüntüsü.
-				
-				# burada savaş fonksiyonu çalışacak.
-	
+
+				array_push( $this->tarafBilgisi,$asker[hid]);
+			
 			}
-			
-			echo "<hr> $tur. Tur sonu.<hr>"; // kontrol için ekran görüntüsü.
-
-		}
-
-	}
-
-	public function catisma($taraf=null) // savaş işlemi burda gerçekleşecek.
-
-	{
-
-	  	
-		$hedef = $this->hedefkontrol($taraf[hid],$taraf[hedef],$this->askerler); // Seçilen birimin hedefindeki birimi tespit ediyoruz.
-		  		
-		if(isset($hedef) and $taraf!=null)
-
-		{
-
-		  	if($hedef[hedef] != $asker[bid] and $hedef[hid] != $asker[hid]) // Seçilen hedef askerin hedefindeyse
-		    	
-		    	{
-		  			
-		  		return $hedef[hid]."'e ait &#9;".$hedef[adi]."  &#9;ile çatışmaya girdi"; // catisma olsun. #burdakladim
-		  		
-		  	}
-
-		}
-
-		else
-		
-		{
-		  	
-		  	$yenihedef = $this->hedefolustur($asker[hid],$this->askerler);
-	  		
-		  	return $hedef = $this->hedefkontrol($asker[hid],$yenihedef,$this->askerler);
-		
-		}	
-			
-	}
-
-	public function hedefolustur($taraf='',$askerler=null) // burada rastgele yeni bir hedef belirlenecek.
-
-	{
-
-		return "Hedef bulunamadı. Yeni hedef belirlenecek" ;	
-
-	}
-
-	public function hedefkontrol($said /* saldiran takım id */,$sabid /* savunan birim id */, $askerler=[])
-	
-	{
-
-		foreach ($askerler as $key => $asker) 
-
-		{
-			
-			if($said != $asker[hid] and $sabid == $asker[bid]) // Seçilen birimin hedefindeki birimi tespit ediyoruz.
-		    	
-		   	{
 					
-				return $asker;
-
-			}
+			return $this;	
 
 		}
+
+		public function siraliveri()
 		
+		{
+
+			$this->askerler = $this->sirala($this->askerler, array('hiz'=>SORT_DESC)); //kucukten buyuge
+
+			return $this->askerler;
+
+		}
+
+		public function end()
+
+		{
+
+			$this->askeryuklemebittiMi=true;
+
+		}
+
+		public function sirala($array, $cols) 
+		
+		{
+	   
+    			$colarr = array();
+    	
+    			foreach ($cols as $col => $order) 
+	
+    			{
+    	    
+    	    			$colarr[$col] = array();
+    	    
+    	    			foreach ($array as $k => $row) 
+    	    
+    	    			{ 
+	
+    	    				$colarr[$col]['_'.$k] = strtolower($row[$col]); 
+	
+    	    			}
+	
+    			}
+	
+    			$eval = 'array_multisort(';
+	
+    			foreach ($cols as $col => $order) 
+	
+    			{
+	
+    	    			$eval .= '$colarr[\''.$col.'\'],'.$order.',';
+	
+    			}
+	
+    			$eval = substr($eval,0,-1).');';
+	
+    			eval($eval);
+	
+    			$ret = array();
+	
+    			foreach ($colarr as $col => $arr) 
+	
+    			{
+	
+    	    			foreach ($arr as $k => $v) 
+	
+    	    			{
+    	        
+    	        			$k = substr($k,1);
+    	        
+    	        			if (!isset($ret[$k])) $ret[$k] = $array[$k];
+    	       
+    	        				$ret[$k][$col] = $array[$k][$col];
+    	    
+    	    			}
+    	
+    			}
+	
+    			return $ret;	
+
+		}
+
 	}
 
-}
-
-?>
+	?>
