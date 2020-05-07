@@ -1,4 +1,4 @@
-# Ekran Görüntüsü ;
+# Ekran Görüntüsü,
 
 ![Image description](http://fetih.online/savas/git/07.05.2020.png)
 savas Object
