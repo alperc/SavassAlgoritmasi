@@ -3,6 +3,7 @@ Ekran Görüntüsü ;
 ![Image description](http://fetih.online/savas/git/07.05.2020.png)
 savas Object
 (
+    [savasTurSayisi:savas:private] => 3
     [askerler] => Array
         (
             [0] => Array
@@ -12,12 +13,12 @@ savas Object
                     [adi] => Müsellem
                     [sayisi] => 333
                     [seviyesi] => 50
-                    [guc] => 11
-                    [hiz] => 22
+                    [guc] => 51
+                    [hiz] => 52
                     [can] => 55
                     [tcan] => 18315
-                    [tguc] => 3663
-                    [tcanguc] => 21978
+                    [tguc] => 16983
+                    [tcanguc] => 35298
                     [hedef] => 1
                 )
 
@@ -28,13 +29,13 @@ savas Object
                     [adi] => Müsellem
                     [sayisi] => 333
                     [seviyesi] => 50
-                    [guc] => 11
-                    [hiz] => 22
+                    [guc] => 51
+                    [hiz] => 52
                     [can] => 55
                     [tcan] => 18315
-                    [tguc] => 3663
-                    [tcanguc] => 21978
-                    [hedef] => 4
+                    [tguc] => 16983
+                    [tcanguc] => 35298
+                    [hedef] => 1
                 )
 
             [1] => Array
@@ -44,12 +45,12 @@ savas Object
                     [adi] => Sipahi
                     [sayisi] => 333
                     [seviyesi] => 2
-                    [guc] => 2
-                    [hiz] => 4
+                    [guc] => 4
+                    [hiz] => 5
                     [can] => 8
                     [tcan] => 2664
-                    [tguc] => 666
-                    [tcanguc] => 3330
+                    [tguc] => 1332
+                    [tcanguc] => 3996
                     [hedef] => 2
                 )
 
@@ -59,14 +60,14 @@ savas Object
                     [bid] => 2
                     [adi] => Sipahi
                     [sayisi] => 333
-                    [seviyesi] => 1
+                    [seviyesi] => 0
                     [guc] => 2
                     [hiz] => 3
-                    [can] => 7
-                    [tcan] => 2331
+                    [can] => 6
+                    [tcan] => 1998
                     [tguc] => 666
-                    [tcanguc] => 2997
-                    [hedef] => 4
+                    [tcanguc] => 2664
+                    [hedef] => 2
                 )
 
         )
