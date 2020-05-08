@@ -1,9 +1,7 @@
 <?php
 
 /**
- *     Savaş sınıfıdır. Bu sınıf içinde önceden belirlenen asker ve askerlerin aralarındaki savaş süreci gerçekleştirilecek.
- *     Miras alınan ordular sınıfı içinde savaş dışı ordu oluşturma , silme , birleştire , seçme , görev yaptırma ve ya iptal etme gibi
- *  alt işlemleri yer almaktadır.  
+ *  Savaş sınıfıdır.
  */
 class savas extends ordular
 
@@ -49,7 +47,7 @@ class savas extends ordular
 			
 			{
 	
-				echo $asker[hid]."'in &#9;".$asker[adi]. "  &#9;saldırıyor."."&#9;Durum : "; # // kontrol için ekran görüntüsü.	
+				echo $asker[hid]."'in    &#9;".$asker[adi]. "  &#9;saldırıyor."."&#9;Durum : "; # // kontrol için ekran görüntüsü.	
 				
 				echo $savassonu = $this->catisma($asker).". <br>"  ; // kontrol için ekran görüntüsü.
 				
@@ -66,7 +64,6 @@ class savas extends ordular
 	public function catisma($taraf=null) // savaş işlemi burda gerçekleşecek.
 
 	{
-
 	  	
 		$hedef = $this->hedefkontrol($taraf[hid],$taraf[hedef],$this->askerler); // Seçilen birimin hedefindeki birimi tespit ediyoruz.
 		  		
@@ -76,9 +73,9 @@ class savas extends ordular
 
 		  	if($hedef[hedef] != $asker[bid] and $hedef[hid] != $asker[hid]) // Seçilen hedef askerin hedefindeyse
 		    	
-		    	{
+		    {
 		  			
-		  		return $hedef[hid]."'e ait &#9;".$hedef[adi]."  &#9;ile çatışmaya girdi"; // catisma olsun. #burdakladim
+		  		return $hedef[hid]."'e ait &#9;  ".$hedef[adi]."  &#9;ile çatışmaya girdi"; // catisma olsun. #burdakladim
 		  		
 		  	}
 
@@ -88,19 +85,48 @@ class savas extends ordular
 		
 		{
 		  	
-		  	$yenihedef = $this->hedefolustur($asker[hid],$this->askerler);
+		  	$yenihedef = $this->hedefolustur($taraf[hid],$this->askerler);
 	  		
-		  	return $hedef = $this->hedefkontrol($asker[hid],$yenihedef,$this->askerler);
+		  	$hedef = $this->hedefkontrol($taraf[hid],$yenihedef[hedef],$this->askerler);
+
+		  	if(isset($hedef) and $taraf!=null)
+
+			{
+	
+			  	if($hedef[hedef] != $asker[bid] and $hedef[hid] != $asker[hid]) // Seçilen hedef askerin hedefindeyse
+			    	
+			    {
+			  			
+			  		return $hedef[hid]."'e ait &#9;  ".$hedef[adi]."  &#9;ile çatışmaya girdi"; // catisma olsun. #burdakladim
+			  		
+			  	}
+	
+			}
 		
 		}	
 			
 	}
 
-	public function hedefolustur($taraf='',$askerler=null) // burada rastgele yeni bir hedef belirlenecek.
+	public function hedefolustur($taraf=null,$askerler=null) // burada rastgele yeni bir hedef belirlenecek.
 
 	{
+		
+		$rand = rand(0,count($askerler)-1);
 
-		return "Hedef bulunamadı. Yeni hedef belirlenecek" ;	
+		if($askerler[$rand][hid] != $taraf)
+
+		{
+
+			return $askerler[$rand] ;	
+		}
+
+		else
+		{
+			
+			return $this->hedefolustur($taraf,$this->askerler);
+
+		}
+		
 
 	}
 
@@ -116,7 +142,7 @@ class savas extends ordular
 		    	
 		   	{
 					
-				return $asker;
+					return $asker;
 
 			}
 
