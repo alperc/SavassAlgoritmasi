@@ -1,6 +1,11 @@
 # Ekran Görüntüsü,
 
 ![Image description](http://fetih.online/savas/git/07.05.2020.png)
+
+Şu an ki hali ile baya bir geliştirdim. 
+
+Saldıracak hedef yoksa başka hedefi buluyor. Sen sadece array içinde verileri gönderiyorsun. sistem kendi her hesabı yapıp sonucu veriyor fakat dediğim gibi memory ile alakalı bir problem var. Tarayıcı Geliştirici Araçları üzerinden eriştiğimde bana şöyle bir hata veriyor;
+- savas:1 GET http://localhost/web/eskidosyalar/sg/game/savas 500 (Internal Server Error) - 
 savas Object
 
 (
