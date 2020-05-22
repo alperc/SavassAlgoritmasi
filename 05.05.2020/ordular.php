@@ -13,13 +13,12 @@
 
 		public $tarafBilgisi = []; 	# savascak tarafların anahtar kelimelerin yer aldığı sınıf.
 
-		//tek değişkende tutuldugunda boşa çıktı. 
-		//public $saldiriSirasi; 		# bu degiskende savaştaki saldırı sırası yer alacak.
+		//tek değişkende tutuldugunda boşa çıktı. public $saldiriSirasi; 		# bu degiskende savaştaki saldırı sırası yer alacak.
 
 		private $torduBilgisi;			# toplam ordu güç verisi yazar.
 
-		public $askeryuklemebittiMi; 		# asker yukleme islemi bittiğinde true değerini alacak ve 
-							# ilksaldiracak ve savas sirasını belirleyecek.
+		public $askeryuklemebittiMi; 	# asker yukleme islemi bittiğinde true değerini alacak ve 
+										# ilksaldiracak ve savas sirasını belirleyecek.
 
 		public function tveri()
 		
@@ -39,7 +38,7 @@
 	
 			{
 
-				array_push( $this->tarafBilgisi,$asker[hid]);
+				array_push( $this->tarafBilgisi,$asker['hid']);
 			
 			}
 					
@@ -47,11 +46,11 @@
 
 		}
 
-		public function siraliveri()
+		public function siraliveri($sart='hiz',$deger=SORT_DESC)
 		
 		{
 
-			$this->askerler = $this->sirala($this->askerler, array('hiz'=>SORT_DESC)); //kucukten buyuge
+			$this->askerler = $this->sirala($this->askerler, array($sart=>$deger)); //kucukten buyuge
 
 			return $this->askerler;
 
@@ -69,59 +68,59 @@
 		
 		{
 	   
-    			$colarr = array();
+    	$colarr = array();
     	
-    			foreach ($cols as $col => $order) 
+    	foreach ($cols as $col => $order) 
 	
-    			{
+    	{
     	    
-    	    			$colarr[$col] = array();
+    	    $colarr[$col] = array();
     	    
-    	    			foreach ($array as $k => $row) 
+    	    foreach ($array as $k => $row) 
     	    
-    	    			{ 
+    	    { 
 	
-    	    				$colarr[$col]['_'.$k] = strtolower($row[$col]); 
+    	    	$colarr[$col]['_'.$k] = strtolower($row[$col]); 
 	
-    	    			}
+    	    }
 	
-    			}
+    	}
 	
-    			$eval = 'array_multisort(';
+    	$eval = 'array_multisort(';
 	
-    			foreach ($cols as $col => $order) 
+    	foreach ($cols as $col => $order) 
 	
-    			{
+    	{
 	
-    	    			$eval .= '$colarr[\''.$col.'\'],'.$order.',';
+    	    $eval .= '$colarr[\''.$col.'\'],'.$order.',';
 	
-    			}
+    	}
 	
-    			$eval = substr($eval,0,-1).');';
+    	$eval = substr($eval,0,-1).');';
 	
-    			eval($eval);
+    	eval($eval);
 	
-    			$ret = array();
+    	$ret = array();
 	
-    			foreach ($colarr as $col => $arr) 
+    	foreach ($colarr as $col => $arr) 
 	
-    			{
+    	{
 	
-    	    			foreach ($arr as $k => $v) 
+    	    foreach ($arr as $k => $v) 
 	
-    	    			{
+    	    {
     	        
-    	        			$k = substr($k,1);
+    	        $k = substr($k,1);
     	        
-    	        			if (!isset($ret[$k])) $ret[$k] = $array[$k];
+    	        if (!isset($ret[$k])) $ret[$k] = $array[$k];
     	       
-    	        				$ret[$k][$col] = $array[$k][$col];
+    	        $ret[$k][$col] = $array[$k][$col];
     	    
-    	    			}
+    	    }
     	
-    			}
+    	}
 	
-    			return $ret;	
+    	return $ret;	
 
 		}
 
