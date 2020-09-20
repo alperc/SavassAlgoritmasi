@@ -2,7 +2,7 @@
 <?php
 
 $asker1 = new asker(1,Alper,333,false,2,50); // (Asker Türü	, Kime Ait 	, Sayısı 	, Sql Durumu 	, Saldıracağı Hedef 	, Seviyesi)
-$asker2 = new asker(2,Alper,333,false,2,50); // (Alper 		, Sipahi 	, 333		, false		, 2(Musellem)		, 50)
+$asker2 = new asker(2,Alper,333,false,2,50); // (1(Sipahi) 	, Alper 	, 333		, false		, 2(Musellem)		, 50)
 
 $asker3 = new asker(1,Çağlar,333,false,1,50);
 $asker4 = new asker(2,Çağlar,333,false,1,0);
